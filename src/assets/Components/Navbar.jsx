@@ -1,34 +1,32 @@
 import { Link } from "react-router-dom";
+import logo from "../Images/Giss-Logo.png"
 
 function Navbar() {
   return (
-    <header className="Navbar">
+    <header className="header">
       <nav className="nav container">
-        <div className="nav__logo">
-          <img
-            src="./images/Giss-Logo.png"
-            alt="Logo page"
-            className="nav__img"
-          />
-        </div>
+        <Link to="/" className="nav__title">
+          <img src={logo} alt="Logo Giss Cleaning Services" className="nav__logo"/>
+          <h2 className="nav__title">GISS CLEANING SERVICES</h2>
+        </Link>
         <ul className="nav__list">
           <li className="nav__item">
-            <Link to="/" className="nav__">
+            <Link to="/" className="nav__link">
               Home
             </Link>
           </li>
           <li className="nav__item">
-            <Link to="/About-Us" className="nav__">
+            <Link to="/About-Us" className="nav__link">
               About Us
             </Link>
           </li>
           <li className="nav__item">
-            <Link to="/Services" className="nav__">
+            <Link to="/Services" className="nav__link">
               Services
             </Link>
           </li>
         </ul>
-        <button>Quote</button>
+        <button className="nav__button">Get a free quote</button>
       </nav>
     </header>
   );
