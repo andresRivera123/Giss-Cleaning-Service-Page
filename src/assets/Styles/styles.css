@@ -23,3 +23,15 @@ body{
   padding: var(--padding-container);
 }
 
+.subtitle{
+  font-size: 1.5rem;
+  color: var(--color-title);
+  font-weight: 700;
+}
+
+.paragraph{
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 0;
+  text-align: justify;
+}

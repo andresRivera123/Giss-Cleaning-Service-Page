@@ -30,6 +30,6 @@ function Navbar() {
       </nav>
     </header>
   );
-}
+} 
 
 export default Navbar;
