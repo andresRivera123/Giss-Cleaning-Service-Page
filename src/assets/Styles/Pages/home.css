@@ -50,35 +50,36 @@
   gap: 24px;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 88px;
 }
 
 .icon {
   width: 150px;
 }
 
-.service__container {
-  text-align: start;
-}
-
 /* KNOWLEDGE */
 
 .knowledge {
   background-color: #F2F7FD;
-  opacity: 0.8;
-  background-image: linear-gradient(135deg, #eaebfd 25%, transparent 25%), linear-gradient(225deg, #eaebfd 25%, transparent 25%), linear-gradient(45deg, #eaebfd 25%, transparent 25%), linear-gradient(315deg, #eaebfd 25%, #F2F7FD 25%);
-  background-position: 10px 0, 10px 0, 0 0, 0 0;
-  background-size: 10px 10px;
-  background-repeat: repeat;
-  overflow: hidden;
+opacity: 1;
+background-image:  radial-gradient(#bad5f1 1.55px, transparent 1.55px), radial-gradient(#bad5f1 1.55px, #F2F7FD 1.55px);
+background-size: 62px 62px;
+background-position: 0 0,31px 31px;
+overflow: hidden;
 
 }
-
 .knowledge__container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding: 0 0 42px  0;
 }
 
 /* SERVICES */
+
+.service__container {
+  text-align: start;
+}
 
 .services {
   width: 100%;
@@ -109,25 +110,31 @@
 
 @media (max-width: 768px) {
   .hero__title {
+    width: 90%;
     font-size: 4.9rem;
   }
 
-
   .hero__paragraph {
+    width: 90%;
     font-size: 2.4rem;
     letter-spacing: 5.6px;
   }
-
 
   .information__container {
     flex-direction: column;
   }
 
-  .information__icons {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    flex: 1;
+  /* SERVICE ICONS */
+
+  .service__icons {
+    width: 80%;
+    grid-template-columns: none;
+    gap: 56px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .icon {
+    width: 125px;
   }
 }
