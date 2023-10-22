@@ -2,7 +2,7 @@
 
 .hero {
   width: 100%;
-  height: 88vh;
+  height: 56vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -25,75 +25,109 @@
 
 .hero__title {
   margin: 0;
-  font-size: 4rem;
-  letter-spacing: 3px;
+  font-size: 7.2rem;
+  letter-spacing: 2.4px;
   color: var(--color-white);
-}
-
-.hero__paragraph {
-  margin: 0;
-  font-size: 2rem;
-  letter-spacing: 7px;
-  color: var(--color-white);
-  margin-bottom: 75px;
-}
-
-/* INFORMATION */
-
-.information{
-  width: 100%;
-  height: 95vh;
-  padding: 5vh 0 0 0;
   text-align: center;
 }
 
-.information__container{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
+.hero__paragraph {
+  width: 100%;
+  margin: 0;
+  font-size: 3.2rem;
+  letter-spacing: 7.2px;
+  color: var(--color-white);
+  padding-bottom: 4rem;
+  text-align: center;
 }
 
-.information__icons{
-  height: 50%;
+/* SERVICE ICONS */
+
+.service__icons {
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  flex: 1;
+  gap: 24px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.information__text{
-  min-width: 500px;
+.icon {
+  width: 150px;
+}
+
+.service__container {
   text-align: start;
-  flex: 1;
 }
 
-.information__video{
-  height: 100%;
+/* KNOWLEDGE */
+
+.knowledge {
+  background-color: #F2F7FD;
+  opacity: 0.8;
+  background-image: linear-gradient(135deg, #eaebfd 25%, transparent 25%), linear-gradient(225deg, #eaebfd 25%, transparent 25%), linear-gradient(45deg, #eaebfd 25%, transparent 25%), linear-gradient(315deg, #eaebfd 25%, #F2F7FD 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 10px 10px;
+  background-repeat: repeat;
+  overflow: hidden;
+
+}
+
+.knowledge__container {
   display: flex;
   justify-content: center;
 }
 
-.information__iframe{
-  
+/* SERVICES */
+
+.services {
+  width: 100%;
+  height: 100vh;
+  background-color: #e1e3e6;
 }
 
-.information__text{
+.information__video {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.information__text {
   display: flex;
   flex-direction: column;
 }
 
-.information__readmore{
-  font-size: 1.05rem;
+.information__readmore {
+  font-size: 1.1rem;
   margin-left: auto;
   color: var(--color-interactive);
   text-decoration: none;
 }
 
-/* SERVICES */
+/* MEDIA QUERY */
 
-.services{
-  width: 100%;
-  height: 100vh;
-  background-color: #E1E3E6;
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 4.9rem;
+  }
+
+
+  .hero__paragraph {
+    font-size: 2.4rem;
+    letter-spacing: 5.6px;
+  }
+
+
+  .information__container {
+    flex-direction: column;
+  }
+
+  .information__icons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    flex: 1;
+  }
 }

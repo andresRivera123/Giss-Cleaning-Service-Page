@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 
 :root {
-  --padding-container: 0 100px;
+  --padding-container: 88px 0 88px 0;
   /* COLORS */
   --color-title: #1976d2;
   --color-interactive: #64B5F6;
   --color-black: #333333;
-  --color-gray: #708794;
+  --color-gray: #6B797F;
   --color-white: #ffffff;
+}
+
+html{
+  font-size: 10px;
 }
 
 body{
@@ -24,14 +28,66 @@ body{
 }
 
 .subtitle{
-  font-size: 1.5rem;
+  font-size: 3.2rem;
   color: var(--color-title);
   font-weight: 700;
 }
 
+.basictitle{
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
 .paragraph{
-  font-size: 1.1rem;
-  font-weight: 300;
+  font-size: 2.0rem;
+  font-weight: 400;
   margin: 0;
   text-align: justify;
+}
+
+.aligncenter{
+  text-align: center;
+}
+
+.quote__button {
+  font-size: 2.4rem;
+  padding: 1.2rem 2.4rem;
+  font-weight: 400;
+  border: 0;
+  border-radius: 1.5rem;
+  background-color: var(--color-interactive);
+  color: var(--color-white);
+  cursor: pointer;
+  text-shadow: 2px 0 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: var(--color-white);
+    color: var(--color-title);
+    transform: scale(1.15);
+    font-weight: 700;
+    text-shadow: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .quote__button {
+    font-size: 2.0rem;
+    padding: 1.2rem 2.4rem;
+    font-weight: 400;
+    border: 0;
+    border-radius: 1.5rem;
+    background-color: var(--color-interactive);
+    color: var(--color-white);
+    cursor: pointer;
+    text-shadow: 2px 0 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-title);
+      transform: scale(1.15);
+      text-shadow: none;
+    }
+  }
 }

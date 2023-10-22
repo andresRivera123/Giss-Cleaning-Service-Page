@@ -1,13 +1,10 @@
 import Navbar from "../Components/Navbar";
 import logo from "../Images/Giss-Logo.png";
-import iconInformation1 from "../Images/Icons/IconInformation1.png";
-import iconInformation2 from "../Images/Icons/IconInformation2.png";
-import iconInformation3 from "../Images/Icons/IconInformation3.png";
-import iconInformation4 from "../Images/Icons/IconInformation4.png";
-import iconInformation5 from "../Images/Icons/IconInformation5.png";
-import iconInformation6 from "../Images/Icons/IconInformation6.png";
+import serviceIcon1 from "../Images/Icons/ServiceIcon1.png"
+import serviceIcon2 from "../Images/Icons/ServiceIcon2.png"
+import serviceIcon3 from "../Images/Icons/ServiceIcon3.png"
+import flag from "../Images/Icons/flagIcon.png"
 
-import nextIcon from "../Images/Icons/next.svg";
 
 function HomePage() {
   return (
@@ -16,78 +13,69 @@ function HomePage() {
       <main>
         {/* -- HERO -- */}
         <section className="hero ">
-          <img src={logo} alt="Background hero Giss" />
-          <h1 className="hero__title">GISS CLEANING SERVICES</h1>
-          <p className="hero__paragraph">Don’t clean just call us</p>
+          {/*  <img src={logo} alt="Background hero Giss" /> */}
+          <h1 className="hero__title">Dont’t clean just call us</h1>
+          <p className="hero__paragraph">Limpieza de hogares y oficinas a domicilio en New Jersey</p>
+          <button className="quote__button">Get a free quote</button>
         </section>
         {/* -- INFORMATION -- */}
-        <section className="information container">
-          <div className="information__container">
-            <article className="information__icons">
-              <div className="information__icon">
-                <img
-                  src={iconInformation1}
-                  alt="Information icon 1"
-                  className="icon"
-                />
-                <p className="information__subtitle">Ipsum dolor.</p>
-              </div>
-              <div className="information__icon">
-                <img
-                  src={iconInformation2}
-                  alt="Information icon 2"
-                  className="icon"
-                />
-                <p className="information__subtitle">Ipsum dolor.</p>
-              </div>
-              <div className="information__icon">
-                <img
-                  src={iconInformation3}
-                  alt="Information icon 3"
-                  className="icon"
-                />
-                <p className="information__subtitle">Ipsum dolor.</p>
-              </div>
-              <div className="information__icon">
-                <img
-                  src={iconInformation4}
-                  alt="Information icon 4"
-                  className="icon"
-                />
-                <p className="information__subtitle">Ipsum dolor.</p>
-              </div>
-              <div className="information__icon">
-                <img
-                  src={iconInformation5}
-                  alt="Information icon 5"
-                  className="icon"
-                />
-                <p className="information__subtitle">Ipsum dolor.</p>
-              </div>
-              <div className="information__icon">
-                <img
-                  src={iconInformation6}
-                  alt="Information icon 6"
-                  className="icon"
-                />
-                <p className="information__subtitle">Ipsum dolor.</p>
-              </div>
-            </article>
-            <div className="information__text">
-              <h2 className="subtitle">What is GISS CLEANING SERVICES?</h2>
-              <p className="paragraph">
-                Somos una compañía que ofrece servicios profesionales de
-                limpieza y mantenimiento para hogares, oficinas, estudios con el
-                objetivo de entregar una confianza hacia el cliente y satisfacer
-                las necesidades de cada uno, ofreciendo seguridad y confianza
-                para que su sitio quede impecablemente limpio.
-              </p>
-
-              <a href="#" className="information__readmore transition1">
-                Read more
-              </a>
+        <section className="information">
+          <article className="service__icons container">
+            <div className="service__icon">
+              <img
+                src={serviceIcon1}
+                alt="Service icon 1"
+                className="icon"
+              />
+              <h2 className="basictitle">Limpieza personalizada</h2>
+              <p className="paragraph  aligncenter">Obtén una limpieza personalizada para tu hogar u oficina.</p>
             </div>
+            <div className="service__icon">
+              <img
+                src={serviceIcon2}
+                alt="Service icon 2"
+                className="icon"
+              />
+              <h2 className="basictitle">Servicios Profesionales</h2>
+              <p className="paragraph  aligncenter">Nuestros servicios profesionales garantizan una limpieza minuciosa y de alta calidad.</p>
+            </div>
+            <div className="service__icon">
+              <img
+                src={serviceIcon3}
+                alt="Service icon 3"
+                className="icon"
+              />
+              <h2 className="basictitle">Comunicación facil</h2>
+              <p className="paragraph  aligncenter">Mantente en contacto con nuestro equipo y recibe información de los servicios y cotización.</p>
+            </div>
+          </article>
+          {/* KNOWLEDGE */}
+          <section className="knowledge">
+            <div className="knowledge__container container">
+              <h2 className="subtitle">Nuestros servicios de limpieza de hogar</h2>
+              <div className="knowledge__services">
+
+
+              </div>
+
+            </div>
+
+          </section>
+          <div className="service__container container">
+            <h2 className="subtitle">What is GISS CLEANING SERVICES?</h2>
+            <p className="paragraph">
+              Somos una compañía que ofrece servicios profesionales de
+              limpieza y mantenimiento para hogares, oficinas, estudios con el
+              objetivo de entregar una confianza hacia el cliente y satisfacer
+              las necesidades de cada uno, ofreciendo seguridad y confianza
+              para que su sitio quede impecablemente limpio.
+            </p>
+
+            <a href="#" className="information__readmore transition1">
+              Read more
+            </a>
           </div>
+
           <div className="information__video">
             <iframe
               className="information__iframe"
@@ -101,6 +89,7 @@ function HomePage() {
             ></iframe>
           </div>
         </section>
+
       </main>
     </>
   );
