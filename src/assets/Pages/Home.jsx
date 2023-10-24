@@ -65,7 +65,7 @@ function HomePage() {
                 las necesidades de cada uno, ofreciendo seguridad y confianza
                 para que su sitio quede impecablemente limpio.
               </p>
-              <Link to="/about-us" className="information__readmore transition1">Read more</Link>
+              <Link to="/Giss-Cleaning-Service-Page/about-us" className="information__readmore transition1">Read more</Link>
             </div>
             <div className="information__video">
               <iframe

@@ -5,15 +5,15 @@ import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Giss-Cleaning-Service-Page/",
     element: <HomePage />,
   },
   {
-    path: "/About-Us",
+    path: "/Giss-Cleaning-Service-Page/About-Us",
     element: <AboutUsPage />,
   },
   {
-    path: "/Services",
+    path: "/Giss-Cleaning-Service-Page/Services",
     element: <ServicesPage />,
   },
 ]);

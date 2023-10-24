@@ -6,23 +6,23 @@ function Navbar() {
   return (
     <header className="header">
       <nav className="nav container">
-        <Link to="/" className="nav__title">
+        <Link to="/Giss-Cleaning-Service-Page/" className="nav__title">
           <img src={logo} alt="Logo Giss Cleaning Services" className="nav__logo"/>
           <h2 className="nav__title--text">GISS CLEANING SERVICES</h2>
         </Link>
         <ul className="nav__list">
           <li className="nav__item">
-            <Link to="/" className="nav__link">
+            <Link to="/Giss-Cleaning-Service-Page/" className="nav__link">
               Home
             </Link>
           </li>
           <li className="nav__item">
-            <Link to="/About-Us" className="nav__link">
+            <Link to="/Giss-Cleaning-Service-Page/About-Us" className="nav__link">
               About Us
             </Link>
           </li>
           <li className="nav__item">
-            <Link to="/Services" className="nav__link">
+            <Link to="/Giss-Cleaning-Service-Page/Services" className="nav__link">
               Services
             </Link>
           </li>
