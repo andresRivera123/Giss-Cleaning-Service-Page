@@ -55,7 +55,7 @@
 }
 
 .swiper__image{
-    border-radius: 100%;
+    border-radius: 20px;
     width: 150px;
     height: 125px;
 }

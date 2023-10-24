@@ -1,10 +1,10 @@
 import Navbar from "../Components/Navbar";
 import SwiperExample from "../Components/Swiper";
-import logo from "../Images/Giss-Logo.png";
 import serviceIcon1 from "../Images/Icons/ServiceIcon1.png";
 import serviceIcon2 from "../Images/Icons/ServiceIcon2.png";
 import serviceIcon3 from "../Images/Icons/ServiceIcon3.png";
-import flag from "../Images/Icons/flagIcon.png";
+
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
@@ -50,40 +50,37 @@ function HomePage() {
           {/* KNOWLEDGE */}
           <section className="knowledge">
             <div className="knowledge__container container">
-              <h2 className="subtitle">
-                Nuestros servicios de limpieza
-              </h2>
-              <SwiperExample/>
+              <h2 className="subtitle">Nuestros servicios de limpieza</h2>
+              <SwiperExample />
               <div className="knowledge__services"></div>
             </div>
           </section>
-          <div className="service__container container">
-            <h2 className="subtitle">What is GISS CLEANING SERVICES?</h2>
-            <p className="paragraph">
-              Somos una compañía que ofrece servicios profesionales de limpieza
-              y mantenimiento para hogares, oficinas, estudios con el objetivo
-              de entregar una confianza hacia el cliente y satisfacer las
-              necesidades de cada uno, ofreciendo seguridad y confianza para que
-              su sitio quede impecablemente limpio.
-            </p>
-
-            <a href="#" className="information__readmore transition1">
-              Read more
-            </a>
-          </div>
-
-          <div className="information__video">
-            <iframe
-              className="information__iframe"
-              width="750"
-              height="600"
-              src="https://www.youtube.com/embed/OqVF3aiU0VE?si=4zNjgiSY78raHOaE"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
+          <section className="information container">
+            <div className="information__read ">
+              <h2 className="subtitle">What is GISS CLEANING SERVICES?</h2>
+              <p className="information__text paragraph">
+                Somos una compañía que ofrece servicios profesionales de
+                limpieza y mantenimiento para hogares, oficinas, estudios con el
+                objetivo de entregar una confianza hacia el cliente y satisfacer
+                las necesidades de cada uno, ofreciendo seguridad y confianza
+                para que su sitio quede impecablemente limpio.
+              </p>
+              <Link to="/about-us" className="information__readmore transition1">Read more</Link>
+            </div>
+            <div className="information__video">
+              <iframe
+                className="information__iframe"
+                width="1100"
+                height="400"
+                src="https://www.youtube.com/embed/OqVF3aiU0VE?si=4zNjgiSY78raHOaE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+          <section className="reviews container"></section>
         </section>
       </main>
     </>

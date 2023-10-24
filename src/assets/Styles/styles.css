@@ -5,7 +5,7 @@
   --padding-container-responsive: 72px 0 72px 0;
   /* COLORS */
   --color-title: #1976d2;
-  --color-interactive: #64B5F6;
+  --color-interactive: #4BA6DB;
   --color-black: #333333;
   --color-gray: #6B797F;
   --color-white: #ffffff;
@@ -76,6 +76,20 @@ body{
 
   .container{
     padding: var(--padding-container-responsive);
+  }
+
+  .subtitle{
+    font-size: 3.0rem;
+
+  }
+  
+  .basictitle{
+    font-size: 2.2rem;
+
+  }
+  
+  .paragraph{
+    font-size: 1.8rem;
   }
 
   .quote__button {
