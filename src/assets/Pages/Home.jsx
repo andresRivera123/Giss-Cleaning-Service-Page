@@ -5,7 +5,9 @@ import serviceIcon2 from "../Images/Icons/ServiceIcon2.png";
 import serviceIcon3 from "../Images/Icons/ServiceIcon3.png";
 
 import { Link } from "react-router-dom";
-
+import Contact from "../Components/Contact";
+import Footer from "../Components/Footer";
+var width = screen.width;
 function HomePage() {
   return (
     <>
@@ -50,14 +52,14 @@ function HomePage() {
           {/* KNOWLEDGE */}
           <section className="knowledge">
             <div className="knowledge__container container">
-              <h2 className="subtitle">Nuestros servicios de limpieza</h2>
+              <h1 className="subtitle">Nuestros servicios de limpieza</h1>
               <SwiperExample />
               <div className="knowledge__services"></div>
             </div>
           </section>
           <section className="information container">
             <div className="information__read ">
-              <h2 className="subtitle">What is GISS CLEANING SERVICES?</h2>
+              <h1 className="subtitle">What is GISS CLEANING SERVICES?</h1>
               <p className="information__text paragraph">
                 Somos una compañía que ofrece servicios profesionales de
                 limpieza y mantenimiento para hogares, oficinas, estudios con el
@@ -65,7 +67,12 @@ function HomePage() {
                 las necesidades de cada uno, ofreciendo seguridad y confianza
                 para que su sitio quede impecablemente limpio.
               </p>
-              <Link to="/Giss-Cleaning-Service-Page/about-us" className="information__readmore transition1">Read more</Link>
+              <Link
+                to="/Giss-Cleaning-Service-Page/about-us"
+                className="information__readmore transition1"
+              >
+                Read more
+              </Link>
             </div>
             <div className="information__video">
               <iframe
@@ -80,7 +87,8 @@ function HomePage() {
               ></iframe>
             </div>
           </section>
-          <section className="reviews container"></section>
+          <Contact/>
+          <Footer/>
         </section>
       </main>
     </>

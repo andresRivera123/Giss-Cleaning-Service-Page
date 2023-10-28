@@ -12,6 +12,7 @@ import nextIcon from "../Images/Icons/NextIcon.svg";
 
 // import required modules
 import { Pagination } from "swiper/modules";
+import { ServicesArray } from "../utils/services";
 
 export default function SwiperExample() {
   return (
@@ -48,98 +49,24 @@ export default function SwiperExample() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
+         {ServicesArray.map((service) => (
+          <SwiperSlide key={service.id}>
           <div className="swiper__container">
             <div className="swiper__first">
-              <img src={serviceBasic} alt="Image" className="swiper__image" />
+              <img src={service.image} alt="Image service" className="swiper__image" />
               <h2 className="swiper__paragraph basictitle">
-                Basic General Services
+                {service.title}
               </h2>
             </div>
             <p className="paragraph">
-              El servicio lorem servicio lorem servicio lorem servicio lorem
-              servicio lorem servicio lorem servicio lorem
+              {service.description}
             </p>
             <img src={nextIcon} alt="Next Icon" className="swiper__next" />
 
-
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="swiper__container">
-            <div className="swiper__first">
-              <img src={serviceBasic} alt="Image" className="swiper__image" />
-              <h2 className="swiper__paragraph basictitle">
-                Basic General Services
-              </h2>
-            </div>
-            <p className="paragraph">
-              El servicio lorem servicio lorem servicio lorem servicio lorem
-              servicio lorem servicio lorem servicio lorem
-            </p>
-            <img src={nextIcon} alt="Next Icon" className="swiper__next" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="swiper__container">
-            <div className="swiper__first">
-              <img src={serviceBasic} alt="Image" className="swiper__image" />
-              <h2 className="swiper__paragraph basictitle">
-                Basic General Services
-              </h2>
-            </div>
-            <p className="paragraph">
-              El servicio lorem servicio lorem servicio lorem servicio lorem
-              servicio lorem servicio lorem servicio lorem
-            </p>
-            <img src={nextIcon} alt="Next Icon" className="swiper__next" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="swiper__container">
-            <div className="swiper__first">
-              <img src={serviceBasic} alt="Image" className="swiper__image" />
-              <h2 className="swiper__paragraph basictitle">
-                Basic General Services
-              </h2>
-            </div>
-            <p className="paragraph">
-              El servicio lorem servicio lorem servicio lorem servicio lorem
-              servicio lorem servicio lorem servicio lorem
-            </p>
-            <img src={nextIcon} alt="Next Icon" className="swiper__next" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="swiper__container">
-            <div className="swiper__first">
-              <img src={serviceBasic} alt="Image" className="swiper__image" />
-              <h2 className="swiper__paragraph basictitle">
-                Basic General Services
-              </h2>
-            </div>
-            <p className="paragraph">
-              El servicio lorem servicio lorem servicio lorem servicio lorem
-              servicio lorem servicio lorem servicio lorem
-            </p>
-            <img src={nextIcon} alt="Next Icon" className="swiper__next" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="swiper__container">
-            <div className="swiper__first">
-              <img src={serviceBasic} alt="Image" className="swiper__image" />
-              <h2 className="swiper__paragraph basictitle">
-                Basic General Services
-              </h2>
-            </div>
-            <p className="paragraph">
-              El servicio lorem servicio lorem servicio lorem servicio lorem
-              servicio lorem servicio lorem servicio lorem
-            </p>
-            <img src={nextIcon} alt="Next Icon" className="swiper__next" />
-          </div>
-        </SwiperSlide>
+        ))}
+       
       </Swiper>
     </>
   );

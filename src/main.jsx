@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./normalized.css";
 import { RouterProvider } from "react-router-dom";
 import router from "./assets/Routes/Routes";
+import Navbar from "./assets/Components/Navbar";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(

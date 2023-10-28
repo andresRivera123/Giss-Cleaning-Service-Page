@@ -1,0 +1,42 @@
+.contact {
+  padding-bottom: 104px;
+}
+
+.contact__information {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact__section {
+  padding-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* CAMBIAR NOMBRE DE VARIABLE CSS */
+.contact__text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact__icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 1.6rem;
+}
+
+.contact__find {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1.6rem;
+}
+
+.contact__icon-follow {
+  padding-left: 1.6rem;
+  width: 50px;
+  height: 50px;
+  margin-right: 1.6rem;
+}
