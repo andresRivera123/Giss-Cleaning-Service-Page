@@ -7,7 +7,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../Styles/Components/swiper.css";
-import serviceBasic from "../Images/ServiceImage1.jpg";
 import nextIcon from "../Images/Icons/NextIcon.svg";
 
 // import required modules
@@ -49,24 +48,34 @@ export default function SwiperExample() {
         modules={[Pagination]}
         className="mySwiper"
       >
-         {ServicesArray.map((service) => (
+        {ServicesArray.map((service) => (
           <SwiperSlide key={service.id}>
-          <div className="swiper__container">
-            <div className="swiper__first">
-              <img src={service.image} alt="Image service" className="swiper__image" />
-              <h2 className="swiper__paragraph basictitle">
-                {service.title}
-              </h2>
+            <div className="swiper__container">
+              <div className="swiper__first">
+                <img
+                  src={service.image}
+                  alt="Image service"
+                  className="swiper__image"
+                />
+                <h2 className="swiper__paragraph basictitle">
+                  {service.title}
+                </h2>
+              </div>
+              <p className="paragraph">{service.description}</p>
+              <div>
+                <Link
+                  to="/Giss-Cleaning-Service-Page/services"
+                >
+                  <img
+                    src={nextIcon}
+                    alt="Next Icon"
+                    className="swiper__next"
+                  />
+                </Link>
+              </div>
             </div>
-            <p className="paragraph">
-              {service.description}
-            </p>
-            <img src={nextIcon} alt="Next Icon" className="swiper__next" />
-
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
         ))}
-       
       </Swiper>
     </>
   );

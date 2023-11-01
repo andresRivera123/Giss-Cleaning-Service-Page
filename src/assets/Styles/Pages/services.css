@@ -1,3 +1,24 @@
-.services{
-    padding: 52px 0;
+.services {
+  padding: 52px 0;
+}
+
+.service__tab {
+  display: flex;
+  flex-direction: column;
+}
+
+.service__principal {
+  padding-bottom: 3.2rem;
+}
+
+.service__extras {
+  height: 100%;
+}
+
+.accordion__container{
+    padding-top: 1.6rem;
+}
+
+@media (max-width: 768px) {
+
 }

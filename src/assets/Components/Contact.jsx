@@ -5,16 +5,30 @@ import contactFollow from "../Images/Icons/FollowIcon.png";
 import contactFacebook from "../Images/Icons/FacebookIcon.png";
 import contactInstagram from "../Images/Icons/InstagramIcon.png";
 import contactWhatssap from "../Images/Icons/WhatsappIcon.png";
-
+import { Link } from "react-router-dom";
 
 export default function Contact() {
+  const handleCallClick = () => {
+    window.location.href = `tel:19735733532`;
+  };
+
+  const handleEmailClick = () => {
+    window.location.href = "mailto:gisscleaningservices@gmail.com";
+  };
+
+  const handleClickWhatssap = () => {
+    const message = encodeURIComponent("Hi Giss! :)");
+    const phoneNumber = "19735733532";
+    window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
+  };
+
   return (
     <section id="contact" className="contact container">
       <div className="contact__information">
         <h1 className="subtitle">Contact us</h1>
         <article className="contact__container">
-          <div className="contact__section">
-            <div className="contact__text">
+          <div className="contact__section" >
+            <div className="contact__text" onClick={handleCallClick}>
               <img
                 src={contactPhone}
                 alt="Service icon 1"
@@ -24,12 +38,12 @@ export default function Contact() {
             </div>
             <p className="paragraph">+1 987 62 52 87</p>
           </div>
-          <div className="contact__section">
-            <div className="contact__text">
+          <div className="contact__section" >
+            <div className="contact__text" onClick={handleEmailClick}>
               <img
-                 src={contactEmail}
-                 alt="Service icon 1"
-                 className="contact__icon"
+                src={contactEmail}
+                alt="Service icon 1"
+                className="contact__icon"
               />
               <h2 className="basictitle">Email:</h2>
             </div>
@@ -38,39 +52,52 @@ export default function Contact() {
           <div className="contact__section">
             <div className="contact__text">
               <img
-                  src={contactLocation}
-                  alt="Service icon 1"
-                  className="contact__icon"
+                src={contactLocation}
+                alt="Service icon 1"
+                className="contact__icon"
               />
               <h2 className="basictitle">Address:</h2>
             </div>
             <p className="paragraph">
-            USA, New Jersey, 5 Park Avenue East 12 str, 74 office
-          </p>
+              USA, New Jersey, 5 Park Avenue East 12 str, 74 office
+            </p>
           </div>
-          <div className="contact__section">
-          <h2 className="basictitle">Find us on:</h2>
+          <div className="contact__social">
+            <h2 className="basictitle">Find us on:</h2>
             <div className="contact__text">
-              
               <div className="contact__find">
-              <img
-                  src={contactFacebook}
-                  alt="Service icon 1"
-                  className="contact__icon-follow"
-              />
-               <img
-                  src={contactInstagram}
-                  alt="Service icon 1"
-                  className="contact__icon-follow"
-              />
-               <img
-                  src={contactWhatssap}
-                  alt="Service icon 1"
-                  className="contact__icon-follow"
-              />
+                <Link
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={contactFacebook}
+                    alt="Facebook icon link"
+                    className="contact__icon-follow"
+                  />
+                </Link>
+                <Link
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={contactInstagram}
+                    alt="Instagram icon link"
+                    className="contact__icon-follow"
+                  />
+                </Link>
+                <Link>
+                  <img
+                    src={contactWhatssap}
+                    alt="Whatssap icon link"
+                    className="contact__icon-follow"
+                    onClick={handleClickWhatssap}
+                  />
+                </Link>
               </div>
             </div>
-
           </div>
         </article>
       </div>

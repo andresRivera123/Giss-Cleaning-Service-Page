@@ -15,10 +15,12 @@ function ServicesPage() {
               Satisfacción...
             </h2>
           </div>
-          <TabsServices/>
+          <TabsServices />
         </section>
-        <Contact/>
-        <Footer/>
+        <section>
+          <Contact />
+          <Footer />
+        </section>
       </main>
     </>
   );
