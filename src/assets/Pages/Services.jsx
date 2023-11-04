@@ -1,12 +1,13 @@
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
+import HideAppBar from "../Components/NavbarMUI";
 import TabsServices from "../Components/Tabs";
 
 function ServicesPage() {
   return (
     <>
-      <Navbar />
+      <HideAppBar/>
       <main>
         <section className="services container">
           <div className="services__title">

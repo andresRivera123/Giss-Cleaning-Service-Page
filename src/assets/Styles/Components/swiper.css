@@ -5,7 +5,7 @@
 }
 
 .swiper-slide {
-  text-align: end;
+  text-align: start;
   font-size: 18px;
   background: #fff;
   border-radius: 1.5rem;
@@ -48,10 +48,7 @@
 
 .swiper__paragraph {
   margin: auto;
-}
-
-.swiper__paragraph {
-  padding: 2rem 0;
+  padding: 2rem 0 2rem 0;
 }
 
 .swiper__image {
@@ -60,10 +57,11 @@
   height: 125px;
 }
 
+.swiper__button{
+  text-align: end;
+}
 
 .swiper__next {
-  padding: 2rem 0 0 0;
-  margin-left: auto;
   width: 50px;
   cursor: pointer;
 }

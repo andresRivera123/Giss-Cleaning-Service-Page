@@ -7,11 +7,12 @@ import serviceIcon3 from "../Images/Icons/ServiceIcon3.png";
 import { Link } from "react-router-dom";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
+import HideAppBar from "../Components/NavbarMUI";
 var width = screen.width;
 function HomePage() {
   return (
     <>
-      <Navbar />
+      <HideAppBar/>
       <main>
         {/* -- HERO -- */}
         <section className="hero ">

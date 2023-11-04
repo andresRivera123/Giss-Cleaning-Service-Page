@@ -1,7 +1,6 @@
 import contactLocation from "../Images/Icons/LocationIcon.png";
 import contactPhone from "../Images/Icons/PhoneIcon.png";
 import contactEmail from "../Images/Icons/EmailIcon.png";
-import contactFollow from "../Images/Icons/FollowIcon.png";
 import contactFacebook from "../Images/Icons/FacebookIcon.png";
 import contactInstagram from "../Images/Icons/InstagramIcon.png";
 import contactWhatssap from "../Images/Icons/WhatsappIcon.png";

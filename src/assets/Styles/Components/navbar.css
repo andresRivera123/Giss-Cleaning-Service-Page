@@ -62,7 +62,6 @@
 
 .nav__menu {
   width: 30px;
-  padding: 18px;
   color: #ffffff;
   display: none;
 }
@@ -111,5 +110,16 @@
   .nav__menu {
     display: block;
   }
-}
 
+  .nav__button {
+    font-size: 1.8rem;
+    padding: 0.8rem 1.4rem;
+    &:hover {
+      transform: none;
+    }
+    &:active{
+      background-color: var(--color-white);
+      color: var(--color-black);
+    }
+  }
+}

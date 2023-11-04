@@ -1,9 +1,10 @@
 import Navbar from "../Components/Navbar";
+import HideAppBar from "../Components/NavbarMUI";
 
 function AboutUsPage() {
   return (
     <>
-      <Navbar />
+      <HideAppBar/>
       <body>About Us</body>
     </>
   );
