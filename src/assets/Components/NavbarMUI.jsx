@@ -4,11 +4,12 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import CssBaseline from "@mui/material/CssBaseline";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import Container from "@mui/material/Container";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Slide from "@mui/material/Slide";
 import { Link } from "react-router-dom";
 import logo from "../Images/Giss-Logo.png";
 import menuLogo from "../Images/Icons/menu.svg";
+import { ServicesArray } from "../utils/services";
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -31,6 +32,18 @@ HideOnScroll.propTypes = {
 const backgroundColor = "var(--color-gray)";
 
 export default function HideAppBar(props) {
+  const [isSubMenuOpen, setIsSubMenuOpen] = React.useState(false);
+
+  const handleMouseEnter = () => {
+    setIsSubMenuOpen(true);
+    console.log(isSubMenuOpen);
+  };
+
+  const handleMouseLeave = () => {
+    setIsSubMenuOpen(false);
+    console.log(isSubMenuOpen);
+  };
+
   return (
     <React.Fragment>
       <CssBaseline />
@@ -61,13 +74,27 @@ export default function HideAppBar(props) {
                   About Us
                 </Link>
               </li>
-              <li className="nav__item">
+              <li
+                className="nav__item"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
                 <Link
                   to="/Giss-Cleaning-Service-Page/Services"
                   className="nav__link"
                 >
                   Services
                 </Link>
+                <ArrowDropDownIcon fontSize="large"/>
+                {isSubMenuOpen && (
+                  <div className="submenu">
+                    <ul className="submenu__container">
+                      {ServicesArray.map((service) => (
+                        <Link to="/Giss-Cleaning-Service-Page/Services" className="nav__link submenu__link">{service.title}</Link>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </li>
             </ul>
 
