@@ -4,12 +4,18 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import CssBaseline from "@mui/material/CssBaseline";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Slide from "@mui/material/Slide";
 import { Link } from "react-router-dom";
 import logo from "../Images/Giss-Logo.png";
 import menuLogo from "../Images/Icons/menu.svg";
 import { ServicesArray } from "../utils/services";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import InboxIcon from "@mui/icons-material/MoveToInbox";
+import ListItemText from "@mui/material/ListItemText";
+import MailIcon from "@mui/icons-material/Mail";
+import { Box, Divider, List, ListItem, SwipeableDrawer } from "@mui/material";
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -33,16 +39,84 @@ const backgroundColor = "var(--color-gray)";
 
 export default function HideAppBar(props) {
   const [isSubMenuOpen, setIsSubMenuOpen] = React.useState(false);
-
   const handleMouseEnter = () => {
     setIsSubMenuOpen(true);
-    console.log(isSubMenuOpen);
   };
-
   const handleMouseLeave = () => {
     setIsSubMenuOpen(false);
-    console.log(isSubMenuOpen);
   };
+
+  const [state, setState] = React.useState({
+    left: false,
+  });
+
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event &&
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
+  };
+
+  const anchor = "left";
+
+  const menuMobile = (anchor) => (
+    <Box
+      sx={{
+        backgroundColor: "#6B797F",
+        height: "100%",
+        width: anchor === "top" || anchor === "bottom" ? "auto" : 275,
+      }}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+      <div className="submenu-mobile">
+        <div className="submenu__giss-mobile">
+          <div className="logo__container-mobile">
+            <img
+              src={logo}
+              alt="Logo Giss Cleaning Services"
+              className="submenu__logo-mobile"
+            />
+          </div>
+          <h2 className="submenu__title-mobile">GISS CLEANING SERVICES</h2>
+        </div>
+        <div className="submenu__options-mobile">
+          <div className="submenu__nav-mobile">
+            <Link
+              to="/Giss-Cleaning-Service-Page/"
+              className="submenu__links-mobile"
+            >
+              Home
+            </Link>
+            <Link
+              to="/Giss-Cleaning-Service-Page/About-Us"
+              className="submenu__links-mobile"
+            >
+              About Us
+            </Link>
+            <Link
+              to="/Giss-Cleaning-Service-Page/Services"
+              className="submenu__links-mobile"
+            >
+              Services
+            </Link>
+          </div>
+          <div className="submenu__quote-mobile">
+            <p className="quote__text-mobile">
+              Curious about the cost? Get your free estimate now!
+            </p>
+            <button className="quote__button">Get a free quote</button>
+          </div>
+        </div>
+      </div>
+    </Box>
+  );
 
   return (
     <React.Fragment>
@@ -85,12 +159,17 @@ export default function HideAppBar(props) {
                 >
                   Services
                 </Link>
-                <ArrowDropDownIcon fontSize="large"/>
+                <ArrowDropDownIcon fontSize="large" />
                 {isSubMenuOpen && (
                   <div className="submenu">
                     <ul className="submenu__container">
                       {ServicesArray.map((service) => (
-                        <Link to="/Giss-Cleaning-Service-Page/Services" className="nav__link submenu__link">{service.title}</Link>
+                        <Link
+                          to="/Giss-Cleaning-Service-Page/Services"
+                          className="submenu__link"
+                        >
+                          {service.title}
+                        </Link>
                       ))}
                     </ul>
                   </div>
@@ -101,7 +180,20 @@ export default function HideAppBar(props) {
             <a href="#contact" className="nav__button">
               Contact
             </a>
-            <img src={menuLogo} alt="Menu" className="nav__menu" />
+            <img
+              src={menuLogo}
+              alt="Menu"
+              className="nav__menu"
+              onClick={toggleDrawer(anchor, true)}
+            />
+            <SwipeableDrawer
+              anchor={anchor}
+              open={state[anchor]}
+              onClose={toggleDrawer(anchor, false)}
+              onOpen={toggleDrawer(anchor, true)}
+            >
+              {menuMobile(anchor)}
+            </SwipeableDrawer>
           </nav>
         </AppBar>
       </HideOnScroll>

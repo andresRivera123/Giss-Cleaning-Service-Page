@@ -47,7 +47,7 @@
   list-style: none;
 }
 
-.submenu{
+.submenu {
   position: absolute;
   padding-top: 30px;
   top: 100%;
@@ -66,12 +66,73 @@
   border: 2px solid var(--color-white);
 }
 
-.submenu__link{
+.submenu__link {
+  font-size: 2rem;
+  color: var(--color-white);
+  text-decoration: none;
+  transition: border-bottom 0.1s ease, color 0.3s ease;
   text-align: center;
   padding: 16px;
+  &:hover {
+    border-bottom: 5px solid var(--color-interactive);
+  }
 }
 
-.nav__item{
+.submenu-mobile {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  justify-content: space-between;
+  padding: 36px 0;
+  text-align: center;
+}
+
+.submenu__giss-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.submenu__logo-mobile {
+  width: 175px;
+  height: 100px;
+}
+
+.submenu__title-mobile {
+  font-size: 2.4rem;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.submenu__options-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu__links-mobile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 24px;
+
+}
+.quote__container-mobile{
+  width: 100%;
+    
+}
+
+.quote__text-mobile{
+  font-size: 1.3rem;
+  color: var(--color-white);
+}
+
+.nav__item {
   display: flex;
   align-items: center;
 }
@@ -88,7 +149,7 @@
 }
 
 .nav__menu {
-  width: 30px;
+  width: 35px;
   color: #ffffff;
   display: none;
 }
@@ -96,7 +157,7 @@
 .nav__button {
   font-size: 2rem;
   text-decoration: none;
-  padding: 1.2rem 2.4rem;
+  padding: 0.6rem 1.4rem;
   border: 0.2rem solid var(--color-white);
   border-color: var(--color-white);
   border-radius: 1.5rem;
@@ -140,11 +201,12 @@
 
   .nav__button {
     font-size: 1.8rem;
-    padding: 0.8rem 1.4rem;
+    margin: 0 32px 0 auto;
+    padding: 0.3rem 1.4rem;
     &:hover {
       transform: none;
     }
-    &:active{
+    &:active {
       background-color: var(--color-white);
       color: var(--color-black);
     }

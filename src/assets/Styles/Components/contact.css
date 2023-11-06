@@ -1,5 +1,10 @@
 .contact {
   padding-bottom: 104px;
+  text-align: center;
+}
+
+.contact__paragraph {
+  margin: 0 25%;
 }
 
 .contact__information {
@@ -26,7 +31,6 @@
   flex-direction: column;
 
   align-items: center;
-
 }
 
 /* CAMBIAR NOMBRE DE VARIABLE CSS */
@@ -46,9 +50,7 @@
   display: flex;
   flex-direction: row;
   padding-left: 1.6rem;
-
 }
-
 
 .contact__icon-follow {
   padding-left: 1.6rem;
@@ -61,10 +63,14 @@
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .contact__section {
     &:hover {
-      transform: none
+      transform: none;
     }
+  }
+
+  .contact__paragraph {
+    margin: 0 3%;
   }
 }
