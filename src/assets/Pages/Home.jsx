@@ -8,11 +8,12 @@ import { Link } from "react-router-dom";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
 import HideAppBar from "../Components/NavbarMUI";
+import ModalQuote from "../Components/ModalQuote";
 var width = screen.width;
 function HomePage() {
   return (
     <>
-      <HideAppBar/>
+      <HideAppBar />
       <main>
         {/* -- HERO -- */}
         <section className="hero ">
@@ -21,7 +22,7 @@ function HomePage() {
           <p className="hero__paragraph">
             Limpieza de hogares y oficinas a domicilio en New Jersey
           </p>
-          <button className="quote__button">Get a free quote</button>
+          <ModalQuote />
         </section>
         {/* -- INFORMATION -- */}
         <section className="  ">
@@ -88,8 +89,8 @@ function HomePage() {
               ></iframe>
             </div>
           </section>
-          <Contact/>
-          <Footer/>
+          <Contact />
+          <Footer />
         </section>
       </main>
     </>

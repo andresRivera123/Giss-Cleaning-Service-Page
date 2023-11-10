@@ -25,7 +25,7 @@ export default function Contact() {
     <section id="contact" className="contact container">
       <div className="contact__information">
         <h1 className="subtitle">Contact us</h1>
-        <p className="paragraph contact__paragraph">Contact us, and our team will be delighted to provide you with a quote tailored to your specific needs. Your cleaner and fresher space is just a message away. Let's talk!"</p>
+        <p className="paragraph contact__paragraph">Contact us, and our team will be delighted to provide you with a quote tailored to your specific needs. Let's talk!"</p>
         <article className="contact__container">
           <div className="contact__section" >
             <div className="contact__text" onClick={handleCallClick}>

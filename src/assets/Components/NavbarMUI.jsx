@@ -16,6 +16,7 @@ import InboxIcon from "@mui/icons-material/MoveToInbox";
 import ListItemText from "@mui/material/ListItemText";
 import MailIcon from "@mui/icons-material/Mail";
 import { Box, Divider, List, ListItem, SwipeableDrawer } from "@mui/material";
+import ModalQuote from "./ModalQuote";
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -109,9 +110,9 @@ export default function HideAppBar(props) {
           </div>
           <div className="submenu__quote-mobile">
             <p className="quote__text-mobile">
-              Curious about the cost? Get your free estimate now!
+              Curious about the cost? Get your free quote now!
             </p>
-            <button className="quote__button">Get a free quote</button>
+            <ModalQuote/>
           </div>
         </div>
       </div>
