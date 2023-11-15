@@ -18,10 +18,10 @@ function HomePage() {
         {/* -- HERO -- */}
         <section className="hero ">
           {/*  <img src={logo} alt="Background hero Giss" /> */}
-          <h1 className="hero__title">Dont’t clean just call us</h1>
-          <p className="hero__paragraph">
-            Limpieza de hogares y oficinas a domicilio en New Jersey
-          </p>
+          <p className="hero__title">Dont’t clean just call us</p>
+          <h1 className="hero__paragraph">
+            Home and office cleaning in New Jersey
+          </h1>
           <ModalQuote />
         </section>
         {/* -- INFORMATION -- */}
@@ -29,32 +29,32 @@ function HomePage() {
           <article className="service__icons container">
             <div className="service__icon">
               <img src={serviceIcon1} alt="Service icon 1" className="icon" />
-              <h2 className="basictitle">Limpieza personalizada</h2>
-              <p className="paragraph  aligncenter">
-                Obtén una limpieza personalizada para tu hogar u oficina.
+              <h2 className="basictitle">Customized Cleaning</h2>
+              <p className="paragraph aligncenter">
+                Get customized cleaning for your home or office.
               </p>
             </div>
             <div className="service__icon">
               <img src={serviceIcon2} alt="Service icon 2" className="icon" />
-              <h2 className="basictitle">Servicios Profesionales</h2>
-              <p className="paragraph  aligncenter">
-                Nuestros servicios profesionales garantizan una limpieza
-                minuciosa y de alta calidad.
+              <h2 className="basictitle">Professional Services</h2>
+              <p className="paragraph aligncenter">
+                Our professional services ensure thorough and high-quality
+                cleaning.
               </p>
             </div>
             <div className="service__icon">
               <img src={serviceIcon3} alt="Service icon 3" className="icon" />
-              <h2 className="basictitle">Comunicación facil</h2>
-              <p className="paragraph  aligncenter">
-                Mantente en contacto con nuestro equipo y recibe información de
-                los servicios y cotización.
+              <h2 className="basictitle">Easy Communication</h2>
+              <p className="paragraph aligncenter">
+                Stay in touch with our team and receive information about
+                services and quotes.
               </p>
             </div>
           </article>
           {/* KNOWLEDGE */}
           <section className="knowledge">
             <div className="knowledge__container container">
-              <h1 className="subtitle">Nuestros servicios de limpieza</h1>
+              <h1 className="subtitle">Our cleaning services</h1>
               <SwiperExample />
               <div className="knowledge__services"></div>
             </div>
@@ -63,11 +63,11 @@ function HomePage() {
             <div className="information__read ">
               <h1 className="subtitle">What is GISS CLEANING SERVICES?</h1>
               <p className="information__text paragraph">
-                Somos una compañía que ofrece servicios profesionales de
-                limpieza y mantenimiento para hogares, oficinas, estudios con el
-                objetivo de entregar una confianza hacia el cliente y satisfacer
-                las necesidades de cada uno, ofreciendo seguridad y confianza
-                para que su sitio quede impecablemente limpio.
+                We are a company that offers professional cleaning and
+                maintenance services for homes, offices, studios with the aim of
+                delivering a confidence to the customer and meet the needs of
+                each one, offering security and confidence that your site is
+                impeccably clean.
               </p>
               <Link
                 to="/Giss-Cleaning-Service-Page/about-us"

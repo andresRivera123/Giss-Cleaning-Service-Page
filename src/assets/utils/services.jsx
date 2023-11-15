@@ -11,41 +11,41 @@ export const ServicesArray = [
     image: service1,
     title: "Basic General Services",
     description:
-      "Limpieza de rutina de áreas comunes, que incluye quitar el polvo, pasar la aspiradora y trapear para mantener la limpieza general.",
+      "Routine cleaning of common areas, including dusting, vacuuming, and mopping to maintain overall cleanliness.",
   },
   {
     id: 1,
     image: service2,
-    title: "Limpieza profunda",
+    title: "Deep Cleaning",
     description:
-      "Limpieza a fondo de todas las superficies, electrodomésticos y rincones ocultos, centrándose en la suciedad y la mugre acumuladas.",
+      "Thorough cleaning of all surfaces, appliances, and hidden corners, focusing on accumulated dirt and grime.",
   },
   {
     id: 2,
     image: service3,
-    title: "Limpieza de oficinas",
+    title: "Office Cleaning",
     description:
-      "Limpieza y mantenimiento periódico de oficinas, quitando el polvo, limpiar superficies, retirar la basura, incluidos escritorios, pisos, baños y áreas comunes.",
+      "Periodic cleaning and maintenance of offices, including dusting, surface cleaning, trash removal, desks, floors, bathrooms, and common areas.",
   },
   {
     id: 3,
     image: service4,
-    title: "Limpieza recurrente (mantenimiento)",
+    title: "Recurring Cleaning",
     description:
-      "Es una limpieza de rutina, puede ser cada semana, 15 dias o mensualmente dependiendo de su caso.",
+      "It's a routine cleaning, which can be scheduled weekly, bi-weekly, or monthly, depending on your needs.",
   },
   {
     id: 4,
     image: service5,
-    title: "Limpieza mudanzas",
+    title: "Removal Cleaning",
     description:
-      "Limpieza exhaustiva para nuevos ocupantes que se mudan a una propiedad (entrada) o la desalojan (salida).",
+      "Comprehensive cleaning for new occupants moving into a property (move-in) or vacating it (move-out).",
   },
   {
     id: 5,
     image: service6,
     title: "Post-construction cleaning",
     description:
-      "Limpieza exhaustiva de espacios comerciales después de la construcción o renovaciones para eliminar el polvo y los escombros.",
+      "Thorough cleaning of commercial spaces after construction or renovations to remove dust and debris.",
   },
 ];

@@ -12,7 +12,7 @@ const AntTab = styled((props) => <Tab disableRipple {...props} />)(
     textTransform: "none",
     fontSize: "2.2rem",
     "@media (max-width: 768px)": {
-      fontSize: "1.8rem", // Tamaño de fuente más pequeño para pantallas pequeñas
+      fontSize: "1.8rem",
     },
 
     "&:hover": {
@@ -81,10 +81,10 @@ export default function TabsServices() {
           aria-label="basic tabs example"
         >
           <AntTab label="Basic general services" {...a11yProps(0)} />
-          <AntTab label="Limpieza profunda" {...a11yProps(1)} />
-          <AntTab label="Limpieza de oficinas" {...a11yProps(2)} />
-          <AntTab label="Limpieza recurrente" {...a11yProps(3)} />
-          <AntTab label="Limpieza mudanzas" {...a11yProps(4)} />
+          <AntTab label="Deep Cleaning" {...a11yProps(1)} />
+          <AntTab label="Office Cleaning" {...a11yProps(2)} />
+          <AntTab label="Recurring Cleaning" {...a11yProps(3)} />
+          <AntTab label="Removal Cleaning" {...a11yProps(4)} />
           <AntTab label="Post-construction cleaning" {...a11yProps(5)} />
         </Tabs>
       </Box>

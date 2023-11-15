@@ -19,6 +19,16 @@
     padding-top: 1.6rem;
 }
 
+.service__quote{
+  display: flex;
+  background-color: #F2F7FD;
+  width: 100%;
+  padding: 2rem 0;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
 @media (max-width: 768px) {
 
 }

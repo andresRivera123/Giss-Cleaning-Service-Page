@@ -7,13 +7,12 @@ import TabsServices from "../Components/Tabs";
 function ServicesPage() {
   return (
     <>
-      <HideAppBar/>
+      <HideAppBar />
       <main>
         <section className="services container">
           <div className="services__title">
             <h2 className="subtitle">
-              Descubre Nuestro Servicios de Limpieza: Del Presupuesto A La
-              Satisfacción...
+              Discover Our Cleaning Services: From Quote To Satisfaction...
             </h2>
           </div>
           <TabsServices />

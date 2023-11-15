@@ -1,5 +1,6 @@
 import { ExpandMore } from "@mui/icons-material";
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
+import ModalQuote from "../Components/ModalQuote";
 
 export const ServicesTabs = [
   {
@@ -111,6 +112,20 @@ export const ServicesTabs = [
             </Accordion>
           </div>
         </div>
+        <div className="service__quote">
+          <p className="paragraph__bold">
+            Curious about the cost? Get your free quote now!
+          </p>
+          <ModalQuote />
+        </div>
+        <p className="paragraph__bold">
+          NOTA:
+          <span className="paragraph">
+            Cabe mencionar que el servicio de limpieza puede incluir su propio
+            paquete personalizado por tal motivo recomendamos preguntar o
+            ponerse en contacto para una mejor atención.
+          </span>
+        </p>
         {/* EXTRAS */}
         <div className="service__extras">
           <div className="accordion__container">
@@ -189,7 +204,7 @@ export const ServicesTabs = [
   },
   {
     id: 1,
-    title: "Limpieza profunda",
+    title: "Deep Cleaning",
     contain: (
       <section className="service__tab">
         <div className="service__principal">
@@ -484,9 +499,23 @@ export const ServicesTabs = [
             </Accordion>
           </div>
         </div>
+        <div className="service__quote">
+          <p className="paragraph__bold">
+            Curious about the cost? Get your free quote now!
+          </p>
+          <ModalQuote />
+        </div>
+        <p className="paragraph__bold">
+          NOTA:
+          <span className="paragraph">
+            Cabe mencionar que el servicio de limpieza puede incluir su propio
+            paquete personalizado por tal motivo recomendamos preguntar o
+            ponerse en contacto para una mejor atención.
+          </span>
+        </p>
         {/* EXTRAS */}
         <div className="service__extras">
-          <Accordion defaultExpanded>
+          <Accordion defaultExpanded className="accordion__container">
             <AccordionSummary
               sx={{ backgroundColor: "#e1e3e6" }}
               expandIcon={<ExpandMore fontSize="large" />}
@@ -540,7 +569,7 @@ export const ServicesTabs = [
   },
   {
     id: 2,
-    title: "Limpieza de oficinas",
+    title: "Office Cleaning",
     contain: (
       <section className="service__tab">
         <div className="service__principal">
@@ -613,6 +642,13 @@ export const ServicesTabs = [
             </Accordion>
           </div>
         </div>
+        <div className="service__quote">
+          <p className="paragraph__bold">
+            Curious about the cost? Get your free quote now!
+          </p>
+          <ModalQuote />
+        </div>
+
         <p className="paragraph__bold">
           NOTA:
           <span className="paragraph">
@@ -626,7 +662,7 @@ export const ServicesTabs = [
   },
   {
     id: 3,
-    title: "Limpieza recurrente",
+    title: "Recurring Cleaning",
     contain: (
       <section className="service__tab">
         <div className="service__principal">
@@ -1017,6 +1053,12 @@ export const ServicesTabs = [
             </Accordion>
           </div>
         </div>
+        <div className="service__quote">
+          <p className="paragraph__bold">
+            Curious about the cost? Get your free quote now!
+          </p>
+          <ModalQuote />
+        </div>
         <p className="paragraph__bold">
           NOTA:
           <span className="paragraph">
@@ -1030,7 +1072,7 @@ export const ServicesTabs = [
   },
   {
     id: 4,
-    title: "Limpieza mudanza",
+    title: "Removal Cleaning",
     contain: (
       <section className="service__tab">
         <div className="service__principal">
@@ -1169,6 +1211,12 @@ export const ServicesTabs = [
             </Accordion>
           </div>
         </div>
+        <div className="service__quote">
+          <p className="paragraph__bold">
+            Curious about the cost? Get your free quote now!
+          </p>
+          <ModalQuote />
+        </div>
         <p className="paragraph__bold">
           NOTA:
           <span className="paragraph">
@@ -1221,13 +1269,18 @@ export const ServicesTabs = [
             </Accordion>
           </div>
         </div>
+        <div className="service__quote">
+          <p className="paragraph__bold">
+            Curious about the cost? Get your free quote now!
+          </p>
+          <ModalQuote />
+        </div>
         <p className="paragraph__bold">
-          Importante:
+          NOTA:
           <span className="paragraph">
-            Nuestro equipo no está autorizado a mover cosas como palos, muebles
-            ni nada. Nos centramos únicamente en la limpieza, como quitar el
-            polvo después de la construcción y aspirar únicamente pisos y
-            paredes.
+            Cabe mencionar que el servicio de limpieza puede incluir su propio
+            paquete personalizado por tal motivo recomendamos preguntar o
+            ponerse en contacto para una mejor atención.
           </span>
         </p>
       </section>

@@ -1,3 +1,20 @@
-.form{
-    
+.modal__title {
+  margin: 0;
+}
+
+.form {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.single-column {
+  grid-column: 1 / -1; /* El botón ocupa toda la fila */
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Una sola columna para todos los elementos cuando el ancho de la ventana sea menor o igual a 600px */
+  }
 }

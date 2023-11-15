@@ -62,7 +62,6 @@ export default function SwiperExample() {
                 </h2>
                 <p className="paragraph">{service.description}</p>
               </div>
-              
               <div className="swiper__button">
                 <Link
                   to="/Giss-Cleaning-Service-Page/services"
