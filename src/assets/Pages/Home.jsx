@@ -1,4 +1,3 @@
-import Navbar from "../Components/Navbar";
 import SwiperExample from "../Components/Swiper";
 import serviceIcon1 from "../Images/Icons/ServiceIcon1.png";
 import serviceIcon2 from "../Images/Icons/ServiceIcon2.png";
@@ -25,7 +24,7 @@ function HomePage() {
           <ModalQuote />
         </section>
         {/* -- INFORMATION -- */}
-        <section className="  ">
+        <section className="">
           <article className="service__icons container">
             <div className="service__icon">
               <img src={serviceIcon1} alt="Service icon 1" className="icon" />
@@ -83,9 +82,8 @@ function HomePage() {
                 height="400"
                 src="https://www.youtube.com/embed/OqVF3aiU0VE?si=4zNjgiSY78raHOaE"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </section>

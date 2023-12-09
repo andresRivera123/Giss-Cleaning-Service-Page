@@ -168,6 +168,7 @@ export default function HideAppBar(props) {
                         <Link
                           to="/Giss-Cleaning-Service-Page/Services"
                           className="submenu__link"
+                          key={service}
                         >
                           {service.title}
                         </Link>
