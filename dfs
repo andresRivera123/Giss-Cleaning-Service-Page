@@ -1,0 +1,101 @@
+[33mcommit e8680a56453c011f46bc0ea8515e2851a67652c6[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: andresRivera123 <carlosandresriveravalle@gmail.com>
+Date:   Sat Dec 9 11:13:37 2023 +0100
+
+    Change to Laptop
+
+[33mcommit 4f18be67f7b3b19577afee957111942576ccb535[m
+Author: andresRivera123 <carlosandresriveravalle@gmail.com>
+Date:   Wed Nov 15 18:54:24 2023 +0100
+
+    Quote in informacion
+
+[33mcommit e50f6b45badbe9bb0242cabd6d0daa691db3e4f8[m
+Author: andresRivera123 <carlosandresriveravalle@gmail.com>
+Date:   Fri Nov 10 10:48:17 2023 +0100
+
+    Fix size submenu + modal 25%
+
+[33mcommit 2ea3e7952d58c386676aa65a16909a0aadfc5d2c[m
+Author: andresRivera123 <carlosandresriveravalle@gmail.com>
+Date:   Mon Nov 6 20:57:28 2023 +0100
+
+    Submenu mobile
+
+[33mcommit e59913a6335d45a1859c2f677a8a076b36fd931f[m
+Author: andresRivera123 <carlosandresriveravalle@gmail.com>
+Date:   Sun Nov 5 11:39:34 2023 +0100
+
+    Add submenu
+
+[33mcommit c92ba553db79dede8f8fbddb39d9550266437110[m
+Author: andresRivera123 <carlosandresriveravalle@gmail.com>
+Date:   Sat Nov 4 13:55:54 2023 +0100
+
+    Hidden navbar + fix query texts
+
+[33mcommit fa500da9fa53661b746f9910fdb4915661eec333[m
+Author: andresRivera123 <carlosandresriveravalle@gmail.com>
+Date:   Wed Nov 1 14:39:15 2023 +0100
+
+    Services page (70%)
+
+[33mcommit edfc7302eca3ff3d711f9fc5b34e347c793c5ae9[m
+Author: andresRivera123 <carlosandresriveravalle@gmail.com>
+Date:   Sat Oct 28 20:49:32 2023 +0200
+
+    Move components + Services page (10%)
+
+[33mcommit f739dc016f1598117847b58461cfe2f1b3b6658f[m
+Author: andresRivera123 <carlosandresriveravalle@gmail.com>
+Date:   Tue Oct 24 21:43:22 2023 +0200
+
+    Change of rute per base in vite.config.js
+
+[33mcommit 928c69822600f232488a2ec9113147ec05bea5a0[m
+Author: andresRivera123 <carlosandresriveravalle@gmail.com>
+Date:   Tue Oct 24 21:15:01 2023 +0200
+
+    Information section completed
+
+[33mcommit a727dd7d3b622bac0e368d371b2d27053842282e[m
+Author: andresRivera123 <carlosandresriveravalle@gmail.com>
+Date:   Mon Oct 23 00:59:00 2023 +0200
+
+    Knowledge: Carrusel funcional
+
+[33mcommit c30c8462b41a74ba02f8d50618bc3cd0865c9d1a[m
+Author: andresRivera123 <carlosandresriveravalle@gmail.com>
+Date:   Sun Oct 22 12:09:54 2023 +0200
+
+    Redesign: Navbar + Hero + responsive
+
+[33mcommit 0374825f751597f9613b26637842eada4fd97a6f[m
+Author: andresRivera123 <88514682+andresRivera123@users.noreply.github.com>
+Date:   Fri Oct 13 17:55:15 2023 +0200
+
+    Section information 75%
+
+[33mcommit 575409279394cb150a164ffbd48c605026c7d316[m
+Author: andresRivera123 <88514682+andresRivera123@users.noreply.github.com>
+Date:   Thu Oct 12 17:47:02 2023 +0200
+
+    Navbar + hero
+
+[33mcommit 7269215a537e9e35a184a5ba40d90a11ffa350de[m
+Author: andresRivera123 <88514682+andresRivera123@users.noreply.github.com>
+Date:   Mon Oct 9 16:33:39 2023 +0200
+
+    Rutes with React-Router-DOM
+
+[33mcommit 34b8857a629a6911058d1bc2acdf9aa3ed661aac[m
+Author: andresRivera123 <88514682+andresRivera123@users.noreply.github.com>
+Date:   Sun Oct 8 14:36:20 2023 -0500
+
+    First push
+
+[33mcommit ac3e2417b1617ee7cb80e771b0fb6769cd6c3278[m
+Author: Andrés Rivera Valle <88514682+andresRivera123@users.noreply.github.com>
+Date:   Sun Oct 8 14:19:37 2023 -0500
+
+    Initial commit
