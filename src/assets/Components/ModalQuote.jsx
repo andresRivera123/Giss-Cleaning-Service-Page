@@ -1,13 +1,13 @@
 import { useState } from "react";
 import * as React from "react";
+import emailjs from "@emailjs/browser";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import {
-  Autocomplete,
   Button,
   TextField,
-  TextareaAutosize,
 } from "@mui/material";
+import { useRef } from "react";
 
 const styleModal = {
   position: "absolute",
@@ -21,43 +21,64 @@ const styleModal = {
 };
 
 export default function ModalQuote() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const form = useRef();
+  const [formValues, setFormValues] = useState({
+    user__name: "",
+    user__number: "",
+    user__email: "",
+  });
 
-  const names = ["John", "Mary", "Alice", "Bob", "Charlie"];
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!emailValidation(email)) {
-      setError({
-        error: true,
-        message: "Incorrect email",
-      });
-      return;
-    }
-
-    setError({
-      error: false,
-      message: "",
+  const handleChange = (e) => {
+    console.log(e.target.name);
+    const { name, value } = e.target;
+    setFormValues({
+      ...formValues,
+      [name]: value,
     });
   };
 
-  const emailValidation = (email) => {
-    // expresion regular para validar email
-    const regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-    return regex.test(email);
+
+  const [open, setOpen] = React.useState(false);
+  const handleClose = () => setOpen(false);
+  const [disabledButton, setDisabledButton] = useState(false)
+
+  const validateForm = () => {
+    return (
+      formValues.user__name.trim() !== "" &&
+      formValues.user__number.trim() !== "" &&
+      /\S+@\S+\.\S+/.test(formValues.user__email) &&
+      formValues.message.trim() !== ""
+    );
+  };
+  
+  const handleSubmit = (e) => {
+    setDisabledButton(true)
+    e.preventDefault();
+    if (validateForm()) {
+      emailjs
+        .sendForm(
+          "service_ndezzve",
+          "template_aw0yvlb",
+          form.current,
+          "FInT8GQNvVmcIns9d"
+        )
+        .then((result) => {
+          console.log(result.text);
+          console.log("message SENT");
+          setOpen()
+          setDisabledButton(false)
+        });
+    }
   };
 
-  const [email, setEmail] = useState("");
-  const [error, setError] = useState({
+  const [error] = useState({
     error: false,
     message: "",
   });
 
   return (
     <div>
-      <button className="quote__button" onClick={handleOpen}>
+      <button className="quote__button" onClick={() => setOpen(true)}>
         Get a free quote
       </button>
       <Modal
@@ -72,12 +93,18 @@ export default function ModalQuote() {
           <p className="paragraph">
             Fill out the form or call (+1 584 56 69 974)
           </p>
-          <Box component="form" className="form" onSubmit={handleSubmit}>
+          <Box
+            component="form"
+            ref={form}
+            className="form"
+            onSubmit={handleSubmit}
+          >
             <TextField
               id="name"
-              name="name"
+              name="user__name"
               label="Name"
               type="text"
+              value={formValues.user__name}
               variant="outlined"
               InputLabelProps={{
                 style: { fontSize: "1.8rem" },
@@ -87,29 +114,33 @@ export default function ModalQuote() {
               }}
               required
               fullWidth
-            />
-             <TextField
-              id="number"
-              name="number"
-              label="Number"
-              type="number"
-              variant="outlined"
-              InputLabelProps={{
-                style: { fontSize: "1.8rem" },
-              }}
-              InputProps={{
-                style: { fontSize: "1.8rem" },
-              }}
-              required
-              fullWidth
+              onChange={handleChange}
             />
             <TextField
-            className="single-column"
-              label="Email"
-              name="email"
+              id="number"
+              name="user__number"
+              label="Number"
+              type="text"
+              value={formValues.user__number}
               variant="outlined"
+              InputLabelProps={{
+                style: { fontSize: "1.8rem" },
+              }}
+              InputProps={{
+                style: { fontSize: "1.8rem" },
+              }}
+              required
+              fullWidth
+              onChange={handleChange}
+            />
+            <TextField
+              className="single-column"
               id="email"
+              label="Email"
+              name="user__email"
               type="email"
+              value={formValues.user__email}
+              variant="outlined"
               InputLabelProps={{
                 style: { fontSize: "1.8rem" },
               }}
@@ -122,29 +153,29 @@ export default function ModalQuote() {
               helperText={
                 <span style={{ fontSize: "1.6rem" }}>{error.message}</span>
               }
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
+              onChange={handleChange}
             />
-           
             <TextField
-              className="single-column"
               id="outlined-multiline-static"
-              label="Your message"
+              className="single-column"
+              label="Menssage"
+              name="message"
+              value={formValues.message}
               multiline
+              rows={3}
               InputLabelProps={{
                 style: { fontSize: "1.8rem" },
               }}
               InputProps={{
                 style: { fontSize: "1.8rem" },
               }}
-              maxRows={4}
-              defaultValue="Default Value"
-              variant="outlined"
-              
+              onChange={handleChange}
             />
             <button
               type="submit"
               className="quote__button single-column"
+              value="SEND EMAIL"
+              disabled={disabledButton}
             >
               Send now
             </button>
