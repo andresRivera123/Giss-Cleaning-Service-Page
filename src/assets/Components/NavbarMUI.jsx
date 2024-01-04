@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import logo from "../Images/Giss-Logo.png";
 import menuLogo from "../Images/Icons/menu.svg";
 import { ServicesArray } from "../utils/services";
-import { Box, Divider, List, ListItem, SwipeableDrawer } from "@mui/material";
+import { Box, SwipeableDrawer } from "@mui/material";
 import ModalQuote from "./ModalQuote";
 
 function HideOnScroll(props) {
@@ -87,6 +87,7 @@ export default function HideAppBar(props) {
             <Link
               to="/Giss-Cleaning-Service-Page/"
               className="submenu__links-mobile"
+
             >
               Home
             </Link>

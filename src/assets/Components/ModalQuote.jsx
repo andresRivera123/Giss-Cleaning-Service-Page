@@ -3,11 +3,10 @@ import * as React from "react";
 import emailjs from "@emailjs/browser";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import {
-  Button,
-  TextField,
-} from "@mui/material";
+import { TextField } from "@mui/material";
+
 import { useRef } from "react";
+import Swal from "sweetalert2";
 
 const styleModal = {
   position: "absolute",
@@ -37,10 +36,9 @@ export default function ModalQuote() {
     });
   };
 
-
   const [open, setOpen] = React.useState(false);
   const handleClose = () => setOpen(false);
-  const [disabledButton, setDisabledButton] = useState(false)
+  const [disabledButton, setDisabledButton] = useState(false);
 
   const validateForm = () => {
     return (
@@ -50,9 +48,9 @@ export default function ModalQuote() {
       formValues.message.trim() !== ""
     );
   };
-  
+
   const handleSubmit = (e) => {
-    setDisabledButton(true)
+    setDisabledButton(true);
     e.preventDefault();
     if (validateForm()) {
       emailjs
@@ -62,11 +60,16 @@ export default function ModalQuote() {
           form.current,
           "FInT8GQNvVmcIns9d"
         )
-        .then((result) => {
-          console.log(result.text);
-          console.log("message SENT");
-          setOpen()
-          setDisabledButton(false)
+        .then(() => {
+          setOpen();
+          setDisabledButton(false);
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Message sent successfully!",
+            showConfirmButton: false,
+            timer: 1500,
+          });
         });
     }
   };

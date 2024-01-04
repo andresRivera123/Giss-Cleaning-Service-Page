@@ -66,6 +66,10 @@
   cursor: pointer;
 }
 
+.imageSwiper{
+  width: 300px;
+}
+
 @media (max-width: 900px) {
   .swiper__container {
     width: 90%;

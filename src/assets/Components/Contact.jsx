@@ -5,29 +5,20 @@ import contactFacebook from "../Images/Icons/FacebookIcon.png";
 import contactInstagram from "../Images/Icons/InstagramIcon.png";
 import contactWhatssap from "../Images/Icons/WhatsappIcon.png";
 import { Link } from "react-router-dom";
+import {
+  handleCallClick,
+  handleClickWhatssap,
+  handleEmailClick,
+} from "../logic/messageSend";
 
 export default function Contact() {
-  const handleCallClick = () => {
-    window.location.href = `tel:19735733532`;
-  };
-
-  const handleEmailClick = () => {
-    window.location.href = "mailto:gisscleaningservices@gmail.com";
-  };
-
-  const handleClickWhatssap = () => {
-    const message = encodeURIComponent("Hi Giss! :)");
-    const phoneNumber = "19735733532";
-    window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
-  };
-
   return (
-    <section id="contact" className="contact container">
-      <div className="contact__information">
+    <footer id="contact" className="contact">
+      <div className="contact__information container">
         <h1 className="subtitle">Contact us</h1>
         <p className="paragraph contact__paragraph">
           Contact us, and our team will be delighted to provide you with a quote
-          tailored to your specific needs. Let's talk!"
+          tailored to your specific needs. Let`s talk!
         </p>
         <article className="contact__container">
           <div className="contact__section">
@@ -61,7 +52,7 @@ export default function Contact() {
               />
               <h2 className="basictitle">Address:</h2>
             </div>
-            <p className="paragraph">122 124 chestnut st newark NJ 07105</p>
+            <p className="paragraph">122 124 chestnut st newark NJ 07105</p>
           </div>
           <div className="contact__social">
             <h2 className="basictitle">Find us on:</h2>
@@ -94,6 +85,11 @@ export default function Contact() {
           </div>
         </article>
       </div>
-    </section>
+      <div className="footer">
+      <p className="footer__text">
+        @GissCleaningServices | <b>Web Designer:</b> Andrés Rivera Valle
+      </p>
+    </div>
+    </footer>
   );
 }

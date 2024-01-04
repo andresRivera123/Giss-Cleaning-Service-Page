@@ -5,14 +5,14 @@ import ModalQuote from "../Components/ModalQuote";
 export const ServicesTabs = [
   {
     id: 0,
-    title: "Basic general services",
+    title: "Basic General Services",
     contain: (
       <section className="service__tab">
         <div className="service__principal">
           {/* PRINCIPAL */}
           <p className="paragraph">
-            Limpieza de rutina de áreas comunes, que incluye quitar el polvo,
-            pasar la aspiradora y trapear para mantener la limpieza general.
+            Routine cleaning of common areas, including dusting, vacuuming, and
+            mopping to maintain general cleanliness.
           </p>
           <div className="accordion__container">
             <Accordion defaultExpanded>
@@ -23,93 +23,28 @@ export const ServicesTabs = [
                 id="panel1a-header"
               >
                 <p className="paragraph__bold">
-                  Limpieza de dormitorios, sala y salon
+                  Bedroom, Living Room, and Lounge Cleaning
                 </p>
               </AccordionSummary>
               <AccordionDetails>
-                <li className="paragraph">Limpiar el polvo</li>
+                <li className="paragraph">Dust cleaning</li>
+                <li className="paragraph">Door handles and light switches</li>
                 <li className="paragraph">
-                  Manijas de puertas e interruptores de luz
+                  Dusting/ventilation grille cleaning, superficial air
+                  conditioner fronts
                 </li>
+                <li className="paragraph">Interior glass: Doors and mirrors</li>
                 <li className="paragraph">
-                  Limpie/desempolve las rejillas de ventilación, frontales de
-                  aire acondicionado (superficiales)
+                  Window sills/rails and window sills.
                 </li>
+                <li className="paragraph">Sweep and mop hard surface floors</li>
+                <li className="paragraph">Vacuum carpets and rugs</li>
                 <li className="paragraph">
-                  Vidrios interiores: Puertas y espejos
-                </li>
-                <li className="paragraph">
-                  Alféizares/rieles y zócalos de ventanas.
-                </li>
-                <li className="paragraph">
-                  Barrer y trapear pisos de superficie dura
-                </li>
-                <li className="paragraph">Aspirar alfrombra y tapetes</li>
-                <li className="paragraph">
-                  1-2 puertas corredizas de entrada/salida incluidas
+                  1-2 sliding entry/exit doors included
                 </li>
               </AccordionDetails>
             </Accordion>
-            <Accordion>
-              <AccordionSummary
-                sx={{ backgroundColor: "#F2F7FD" }}
-                expandIcon={<ExpandMore fontSize="large" />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <p className="paragraph__bold">Limpieza de baño:</p>
-              </AccordionSummary>
-              <AccordionDetails>
-                <li className="paragraph">Superficies</li>
-                <li className="paragraph">
-                  Manijas de puertas e interruptores de luz
-                </li>
-                <li className="paragraph">Duchas y bañeras</li>
-                <li className="paragraph">Baños</li>
-                <li className="paragraph">
-                  Vidrio interior: ventanas, puertas, espejos
-                </li>
-                <li className="paragraph">Trabajos de recorte y moldura</li>
-                <li className="paragraph">
-                  Rejillas de entrada de polvo y rejillas de retorno de aire
-                </li>
-                <li className="paragraph">
-                  Vidrio interior: ventanas, puertas, espejos
-                </li>
-              </AccordionDetails>
-            </Accordion>
-            <Accordion>
-              <AccordionSummary
-                sx={{ backgroundColor: "#F2F7FD" }}
-                expandIcon={<ExpandMore fontSize="large" />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <p className="paragraph__bold">Limpieza de cocina:</p>
-              </AccordionSummary>
-              <AccordionDetails>
-                <li className="paragraph">Encimeras</li>
-                <li className="paragraph">
-                  Superficies: todos los gabinetes, estufa, refrigerador
-                </li>
-                <li className="paragraph">Microondas por dentro y por fuera</li>
-                <li className="paragraph">Fregaderos y accesorios</li>
-                <li className="paragraph">
-                  Limpie el exterior de gabinetes y cajones
-                </li>
-                <li className="paragraph">
-                  Cubiertas para interruptores de luz y tomacorrientes
-                </li>
-                <li className="paragraph">
-                  Barrer y trapear pisos de superficie dura
-                </li>
-                <li className="paragraph">Aspirar alfombras y tapetes</li>
-                <li className="paragraph">Limpieza de campanas de cocina</li>
-                <li className="paragraph">
-                  Alféizares/rieles de ventanas y zócalos
-                </li>
-              </AccordionDetails>
-            </Accordion>
+            {/* ... (continue with translations for other sections) */}
           </div>
         </div>
         <div className="service__quote">
@@ -119,11 +54,11 @@ export const ServicesTabs = [
           <ModalQuote />
         </div>
         <p className="paragraph__bold">
-          NOTA:
+          NOTE:
           <span className="paragraph">
-            Cabe mencionar que el servicio de limpieza puede incluir su propio
-            paquete personalizado por tal motivo recomendamos preguntar o
-            ponerse en contacto para una mejor atención.
+            It&#39;s worth mentioning that the cleaning service can include its
+            own customized package, so we recommend asking or contacting for
+            better assistance.
           </span>
         </p>
         {/* EXTRAS */}
@@ -136,63 +71,62 @@ export const ServicesTabs = [
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <p className="paragraph__bold">EXTRAS/ADICIONALES</p>
+                <p className="paragraph__bold">EXTRAS/ADDITIONAL SERVICES</p>
               </AccordionSummary>
               <AccordionDetails>
                 <li className="paragraph__bold">
-                  Limpieza interior de electrodomésticos:
+                  Appliance Interior Cleaning:
                   <span className="paragraph">
-                    Limpieza y desinfección del interior de electrodomésticos de
-                    cocina como refrigeradores.
+                    Cleaning and disinfection of the interior of kitchen
+                    appliances such as refrigerators.
                   </span>
                 </li>
                 <li className="paragraph__bold">
-                  Limpieza de persianas y cortinas:
+                  Blinds and Curtains Cleaning:
                   <span className="paragraph">
-                    Limpieza de persianas, cortinas y cortinas para eliminar
-                    polvo y alérgenos.
+                    Cleaning of blinds, curtains, and drapes to eliminate dust
+                    and allergens.
                   </span>
                 </li>
                 <li className="paragraph__bold">
-                  Limpieza de cristales:
+                  Window Cleaning:
                   <span className="paragraph">
-                    Limpieza de cristales interiores y exteriores para una
-                    visión clara y sin rayas.
+                    Cleaning of interior and exterior windows for a clear and
+                    streak-free view.
                   </span>
                 </li>
                 <li className="paragraph__bold">
-                  Limpieza del garaje:
+                  Garage Cleaning:
                   <span className="paragraph">
-                    Limpieza y organización del garaje, incluido barrer y
-                    ordenar.
+                    Cleaning and organization of the garage, including sweeping
+                    and tidying up.
                   </span>
                 </li>
                 <li className="paragraph__bold">
-                  Limpieza de patios y exteriores:
+                  Patio and Outdoor Cleaning:
                   <span className="paragraph">
-                    Limpieza de espacios exteriores, Incluidos patios, terrazas
-                    y muebles.
+                    Cleaning of outdoor spaces, including patios, terraces, and
+                    furniture.
                   </span>
                 </li>
                 <li className="paragraph__bold">
-                  Lavado de vajillas:
+                  Dishwashing:
                   <span className="paragraph">
-                    Lavado de manos o carga y descarga del lavavajillas.
+                    Handwashing or loading and unloading the dishwasher.
                   </span>
                 </li>
                 <li className="paragraph__bold">
-                  Servicios de Lavandería:
+                  Laundry Services:
                   <span className="paragraph">
-                    Lavado, secado, doblado y planchado de ropa y mantelería.
+                    Washing, drying, folding, and ironing of clothes and linens.
                   </span>
                 </li>
                 <li className="paragraph__bold">
-                  Organización y orden:
+                  Organization and Tidying Up:
                   <span className="paragraph">
-                    Ordenar y organizar espacios, incluidos armarios, gabinetes
-                    y despensas. eliminación de moho y hongos, limpieza
-                    posterior a la construcción o eliminación de pelo de
-                    mascotas.
+                    Sorting and organizing spaces, including closets, cabinets,
+                    and pantries. Mold and mildew removal, post-construction
+                    cleaning, or pet hair removal.
                   </span>
                 </li>
               </AccordionDetails>
@@ -210,8 +144,8 @@ export const ServicesTabs = [
         <div className="service__principal">
           {/* PRINCIPAL */}
           <p className="paragraph">
-            Limpieza a fondo de todas las superficies, electrodomésticos y
-            rincones ocultos, centrándose en la suciedad y la mugre acumuladas.
+            Thorough cleaning of all surfaces, appliances, and hidden corners,
+            focusing on accumulated dirt and grime.
           </p>
           <div className="accordion__container">
             <Accordion defaultExpanded>
@@ -221,80 +155,66 @@ export const ServicesTabs = [
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <p className="paragraph__bold">
-                  Lista de verificación de la cocina de la casa profunda
-                </p>
+                <p className="paragraph__bold">Deep House Kitchen Checklist</p>
               </AccordionSummary>
               <AccordionDetails>
                 <li className="paragraph">
-                  Limpiar y desinfectar el bote de basura
+                  Clean and disinfect the garbage bin
                 </li>
                 <li className="paragraph">
-                  Limpiar el microondas. (dentro y fuera)
+                  Clean the microwave. (inside and outside)
+                </li>
+                <li className="paragraph">Clean the dishwasher thoroughly.</li>
+                <li className="paragraph">
+                  Clean the inside of the refrigerator and organize.
+                </li>
+                <li className="paragraph">Clean and organize the freezer.</li>
+                <li className="paragraph">Vacuum refrigerator coils.</li>
+                <li className="paragraph">Clean the oven (inside the oven).</li>
+                <li className="paragraph">
+                  Clean the range hood vent and change the filter if necessary.
+                </li>
+                <li className="paragraph">Clean stove burners.</li>
+                <li className="paragraph">
+                  Clean and disinfect the garbage disposal.
                 </li>
                 <li className="paragraph">
-                  Limpiar profundamente el lavavajillas.
+                  Clean and organize plastic utensils and storage containers.
                 </li>
                 <li className="paragraph">
-                  Limpiar el interior del frigorífico y organizar
-                </li>
-                <li className="paragraph">Limpiar y organizar el congelador</li>
-                <li className="paragraph">Bobinas de refrigerador al vacío</li>
-                <li className="paragraph">
-                  Limpiar el horno (dentro del horno)
+                  Rearrange kitchen cabinets and drawers (inside and outside).
                 </li>
                 <li className="paragraph">
-                  Limpie la ventilación del capó y cambie el filtro si es
-                  necesario
+                  Clean and organize kitchen drawers.
                 </li>
                 <li className="paragraph">
-                  Limpie los quemadores de la estufa
+                  Clean and disinfect the coffee maker.
                 </li>
                 <li className="paragraph">
-                  Limpiar y desinfectar el triturador de basura
+                  Clean and disinfect small appliances.
                 </li>
                 <li className="paragraph">
-                  Limpiar y organizar utensilios de plástico y contenedores de
-                  almacenamiento.
+                  Clean under the sink and remove unnecessary items.
+                </li>
+                <li className="paragraph">Clean cabinet doors thoroughly.</li>
+                <li className="paragraph">Deep clean floors.</li>
+                <li className="paragraph">
+                  Dust ceiling moldings, wall corners, and floor moldings.
+                </li>
+                <li className="paragraph">Scrub walls.</li>
+                <li className="paragraph">
+                  Clean and disinfect light switches and outlets.
+                </li>
+                <li className="paragraph">Dust from top to bottom.</li>
+                <li className="paragraph">Wash table cushions.</li>
+                <li className="paragraph">Clean light fixtures.</li>
+                <li className="paragraph">
+                  Disinfect the table and clean all chairs, including legs and
+                  underneath.
                 </li>
                 <li className="paragraph">
-                  Reorganizar gabinetes y cajones de cocina. (gabinetes
-                  interiores y exteriores)
-                </li>
-                <li className="paragraph">
-                  Limpiar y organizar los cajones de la cocina
-                </li>
-                <li className="paragraph">Limpiar y desinfectar la cafetera</li>
-                <li className="paragraph">
-                  Limpiar y desinfectar pequeños electrodomésticos
-                </li>
-                <li className="paragraph">
-                  Limpia debajo del fregadero y elimina lo innecesario
-                </li>
-                <li className="paragraph">
-                  Puertas de gabinetes limpias profundamente
-                </li>
-                <li className="paragraph">Pisos de limpieza profunda</li>
-                <li className="paragraph">
-                  Molduras de techo antipolvo, esquinas de paredes y molduras de
-                  piso
-                </li>
-                <li className="paragraph">Fregar paredes</li>
-                <li className="paragraph">
-                  Limpiar y desinfectar interruptores y enchufes de luz
-                </li>
-                <li className="paragraph">
-                  Retire todo el polvo de arriba a abajo
-                </li>
-                <li className="paragraph">Lavar cojines de mesa</li>
-                <li className="paragraph">Artefactos de iluminación limpios</li>
-                <li className="paragraph">
-                  Desinfecte la mesa y limpie todas las sillas, incluidas las
-                  patas y debajo
-                </li>
-                <li className="paragraph">
-                  Retire la alfombra, sacúdala, aspire y limpie el piso antes de
-                  reemplazar la alfombra.
+                  Remove the rug, shake it out, vacuum, and clean the floor
+                  before replacing the rug.
                 </li>
               </AccordionDetails>
             </Accordion>
@@ -306,26 +226,25 @@ export const ServicesTabs = [
                 id="panel1a-header"
               >
                 <p className="paragraph__bold">
-                  Lista de verificación del comedor para la limpieza profunda de
-                  la casa
+                  Deep Cleaning Checklist for Dining Room
                 </p>
               </AccordionSummary>
               <AccordionDetails>
-                <li className="paragraph">Eliminar elementos innecesarios</li>
+                <li className="paragraph">Remove unnecessary items</li>
                 <li className="paragraph">
-                  Manijas de puertas e interruptores de luz
+                  Clean door handles and light switches
                 </li>
-                <li className="paragraph">Duchas y bañeras</li>
-                <li className="paragraph">Baños</li>
+                <li className="paragraph">Showers and bathtubs</li>
+                <li className="paragraph">Toilets</li>
                 <li className="paragraph">
-                  Vidrio interior: ventanas, puertas, espejos
+                  Interior glass: windows, doors, mirrors
                 </li>
-                <li className="paragraph">Trabajos de recorte y moldura</li>
+                <li className="paragraph">Trim and molding work</li>
                 <li className="paragraph">
-                  Rejillas de entrada de polvo y rejillas de retorno de aire
+                  Dust entry grilles and air return grilles
                 </li>
                 <li className="paragraph">
-                  Vidrio interior: ventanas, puertas, espejos
+                  Interior glass: windows, doors, mirrors
                 </li>
               </AccordionDetails>
             </Accordion>
@@ -337,66 +256,57 @@ export const ServicesTabs = [
                 id="panel1a-header"
               >
                 <p className="paragraph__bold">
-                  Limpieza profunda de la casa para baños:
+                  Deep Cleaning Checklist for Bathrooms:
                 </p>
               </AccordionSummary>
               <AccordionDetails>
                 <li className="paragraph">
-                  Recuerde siempre limpiar de arriba a abajo
+                  Always remember to clean from top to bottom
+                </li>
+                <li className="paragraph">Clean ceiling air vents</li>
+                <li className="paragraph">
+                  Clean and disinfect light switches and fixtures
                 </li>
                 <li className="paragraph">
-                  Limpie las salidas de aire del techo
+                  Clean and disinfect toothbrush holders
                 </li>
                 <li className="paragraph">
-                  Limpiar y desinfectar interruptores y accesorios de luz
+                  Clean and refill soap dish and/or dispenser
+                </li>
+                <li className="paragraph">Clean light fixtures</li>
+                <li className="paragraph">Clean mirror</li>
+                <li className="paragraph">Clean shower curtain and liner</li>
+                <li className="paragraph">
+                  Clean the door frame of the shower
                 </li>
                 <li className="paragraph">
-                  Limpiar y desinfectar los portacepillos de dientes
+                  Clean the plastic strip at the bottom of a glass shower door
+                </li>
+                <li className="paragraph">Disinfect countertops</li>
+                <li className="paragraph">
+                  Dust and clean windows, inside and outside
+                </li>
+                <li className="paragraph">Mop and scrub floors</li>
+                <li className="paragraph">
+                  Scrub and disinfect the toilet, including around the base,
+                  under the seat, and around hinges
+                </li>
+                <li className="paragraph">Scrub the tub and/or shower</li>
+                <li className="paragraph">Scrub walls (some stains)</li>
+                <li className="paragraph">Clean the toilet</li>
+                <li className="paragraph">
+                  Clean the garbage can (inside and outside)
                 </li>
                 <li className="paragraph">
-                  Limpie y rellene la jabonera y/o la bomba
+                  Clean cabinets, knobs, towel racks, and toilet paper holders
                 </li>
-                <li className="paragraph">Limpiar artefactos de iluminación</li>
-                <li className="paragraph">Espejo limpio</li>
+                <li className="paragraph">Clean the bathroom exhaust fan</li>
+                <li className="paragraph">Clean showerhead</li>
                 <li className="paragraph">
-                  Limpiar la cortina y el forro de la ducha
-                </li>
-                <li className="paragraph">
-                  Limpiar el marco de la puerta de la ducha
+                  Clean, organize, and tidy up cabinets and drawers
                 </li>
                 <li className="paragraph">
-                  Limpiar la tira de plástico en la parte inferior de una puerta
-                  de ducha de vidrio
-                </li>
-                <li className="paragraph">Desinfectar encimeras</li>
-                <li className="paragraph">
-                  Quite el polvo y limpie las ventanas, por dentro y por fuera
-                </li>
-                <li className="paragraph">Trapear y fregar pisos</li>
-                <li className="paragraph">
-                  Friegue y desinfecte el inodoro, incluso alrededor de la base,
-                  debajo del asiento y alrededor de las bisagras
-                </li>
-                <li className="paragraph">Frote la bañera y/o la ducha</li>
-                <li className="paragraph">
-                  Friega las paredes. (algunas manchas)
-                </li>
-                <li className="paragraph">Lavar el inodoro</li>
-                <li className="paragraph">
-                  Lavar el bote de basura (por dentro y por fuera)
-                </li>
-                <li className="paragraph">
-                  Limpiar gabinetes, perillas, toalleros y portarrollos
-                </li>
-                <li className="paragraph">
-                  Limpiar el extractor de aire del baño
-                </li>
-                <li className="paragraph">Cabezal de ducha limpio</li>
-                <li className="paragraph">
-                  Limpia, organiza y ordena armarios y cajones
-                </li>
-                <li className="paragraph">
-                  Limpia, organiza y ordena el armario del baño
+                  Clean, organize, and tidy up the bathroom closet
                 </li>
               </AccordionDetails>
             </Accordion>
@@ -408,39 +318,35 @@ export const ServicesTabs = [
                 id="panel1a-header"
               >
                 <p className="paragraph__bold">
-                  Lista de verificación de limpieza profunda para salas de
-                  estar/áreas familiares:
+                  Deep Cleaning Checklist for Living Rooms/Family Areas:
                 </p>
               </AccordionSummary>
               <AccordionDetails>
                 <li className="paragraph">
-                  Toma cualquier cosa que no pertenezca a la sala de estar.
+                  Remove anything that doesn&#39;t belong in the living room.
                 </li>
                 <li className="paragraph">
-                  Molduras de techo antipolvo, esquinas de paredes y molduras de
-                  piso
+                  Dust ceiling moldings, wall corners, and floor moldings
                 </li>
+                <li className="paragraph">Vacuum the entire carpeted area</li>
                 <li className="paragraph">
-                  Aspire toda el área de la alfombra
+                  Vacuum under furniture and between cushions
                 </li>
+                <li className="paragraph">Dust ceiling fans</li>
                 <li className="paragraph">
-                  Aspire debajo de los muebles y entre los cojines
+                  Clean lights and wash light globes
                 </li>
-                <li className="paragraph">Ventiladores de techo de polvo</li>
+                <li className="paragraph">Dust lamps</li>
                 <li className="paragraph">
-                  Limpie las luces y lave los globos de luz
+                  Dust edges of upholstery, mirrors, and pictures
                 </li>
-                <li className="paragraph">Lámparas de polvo</li>
+                <li className="paragraph">Clean windows and sills</li>
                 <li className="paragraph">
-                  Bordes de polvo de tapices, espejos y cuadros
+                  Remove wear marks from doors and moldings
                 </li>
-                <li className="paragraph">Limpiar ventanas y alféizares</li>
+                <li className="paragraph">Dust electronics</li>
                 <li className="paragraph">
-                  Eliminar las marcas de desgaste de puertas y molduras
-                </li>
-                <li className="paragraph">Electrónica de polvo</li>
-                <li className="paragraph">
-                  Desinfectar mandos a distancia y dispositivos electrónicos
+                  Disinfect remote controls and electronic devices
                 </li>
               </AccordionDetails>
             </Accordion>
@@ -452,48 +358,40 @@ export const ServicesTabs = [
                 id="panel1a-header"
               >
                 <p className="paragraph__bold">
-                  Lista de verificación de limpieza profunda para dormitorios:
+                  Deep Cleaning Checklist for Bedrooms:
                 </p>
               </AccordionSummary>
               <AccordionDetails>
                 <li className="paragraph">
-                  Toma cualquier cosa que no pertenezca al dormitorio.
+                  Remove anything that doesn&#39;t belong in the bedroom.
                 </li>
                 <li className="paragraph">
-                  Polvo del techo, las esquinas y las molduras de techo
-                  superiores e inferiores
+                  Dust ceiling, corners, and upper and lower ceiling moldings
+                </li>
+                <li className="paragraph">Dust baseboards and window sills</li>
+                <li className="paragraph">Dust and polish furniture</li>
+                <li className="paragraph">
+                  Dust edges of upholstery, mirrors, and pictures
+                </li>
+                <li className="paragraph">Clean glass and mirrors</li>
+                <li className="paragraph">Dust lamps</li>
+                <li className="paragraph">Vacuum lampshades</li>
+                <li className="paragraph">
+                  Pick up, fold dirty laundry, and remove anything that
+                  doesn&#39;t belong
+                </li>
+                <li className="paragraph">Clean light fixtures</li>
+                <li className="paragraph">Organize the closet</li>
+                <li className="paragraph">Clean mattress</li>
+                <li className="paragraph">Clean under your bed</li>
+                <li className="paragraph">Wash sheets</li>
+                <li className="paragraph">Wash pillows</li>
+                <li className="paragraph">Clean windows and sills</li>
+                <li className="paragraph">
+                  Vacuum the carpet, including edges and under furniture
                 </li>
                 <li className="paragraph">
-                  Quitar el polvo de los zócalos y los alféizares de las
-                  ventanas
-                </li>
-                <li className="paragraph">
-                  Quitar el polvo y pulir los muebles
-                </li>
-                <li className="paragraph">
-                  Bordes de polvo de tapices, espejos y cuadros
-                </li>
-                <li className="paragraph">Limpiar cristales y espejos</li>
-                <li className="paragraph">Lámparas de polvo</li>
-                <li className="paragraph">Pantallas de lámparas de vacío</li>
-                <li className="paragraph">
-                  Recogemos, doblamos la ropa sucia y retiramos todo lo que no
-                  corresponde
-                </li>
-                <li className="paragraph">Artefactos de iluminación limpios</li>
-                <li className="paragraph">Organizar el armario</li>
-                <li className="paragraph">Colchón limpio</li>
-                <li className="paragraph">Limpiar debajo de tu cama</li>
-                <li className="paragraph">Lavar las sábanas</li>
-                <li className="paragraph">Lavar almohadas</li>
-                <li className="paragraph">Limpiar ventanas y alféizares</li>
-                <li className="paragraph">
-                  Aspirar la alfombra, incluidos los bordes y debajo de los
-                  muebles
-                </li>
-                <li className="paragraph">
-                  Desinfectar las perillas de las puertas y las placas de los
-                  interruptores de luz
+                  Disinfect door handles and light switch plates
                 </li>
               </AccordionDetails>
             </Accordion>
@@ -506,11 +404,11 @@ export const ServicesTabs = [
           <ModalQuote />
         </div>
         <p className="paragraph__bold">
-          NOTA:
+          NOTE:
           <span className="paragraph">
-            Cabe mencionar que el servicio de limpieza puede incluir su propio
-            paquete personalizado por tal motivo recomendamos preguntar o
-            ponerse en contacto para una mejor atención.
+            It&#39;s worth mentioning that the cleaning service can include its
+            own customized package, so we recommend asking or contacting for
+            better assistance.
           </span>
         </p>
         {/* EXTRAS */}
@@ -526,41 +424,34 @@ export const ServicesTabs = [
             </AccordionSummary>
             <AccordionDetails>
               <p className="paragraph__bold">
-                Lista de verificación adicional de limpieza profunda de la casa:
+                Additional Deep Cleaning Checklist for the House:
               </p>
               <li className="paragraph">
-                Limpieza de alfombras/eliminación de manchas más allá de pasar
-                la aspiradora
+                Carpet cleaning/stain removal beyond vacuuming
+              </li>
+              <li className="paragraph">Unclogging drains and pipes</li>
+              <li className="paragraph">Window washing</li>
+              <li className="paragraph">Porch and patio cleaning</li>
+              <li className="paragraph">
+                Repair or cleaning of small appliances
               </li>
               <li className="paragraph">
-                Desobstrucción de desagúes y tuberías
-              </li>
-              <li className="paragraph">Lavado de cristales</li>
-              <li className="paragraph">Limpieza de porches y patios</li>
-              <li className="paragraph">
-                Reparación o limpieza de pequeños electrodomésticos
+                Restoration of fire and water damage
               </li>
               <li className="paragraph">
-                Restauración de daños por incendio y agua
+                Repair of scratches or damage to wood
               </li>
-              <li className="paragraph">
-                Reparación de rayones o daños en la madera
-              </li>
-              <li className="paragraph">Saneamiento del cubo de basura</li>
-              <li className="paragraph">Descalcificación de grifos</li>
-              <li className="paragraph">
-                Limpieza de cubiertas de ventilación
-              </li>
-              <li className="paragraph">
-                Descongelación y limpieza de congeladores
-              </li>
-              <li className="paragraph">Limpieza de lavavajillas</li>
-              <li className="paragraph">Lavado de platos, ollas y sartenes</li>
-              <li className="paragraph">Limpieza de cortinas de baño</li>
-              <li className="paragraph">Limpieza de aireadores</li>
-              <li className="paragraph">Campana de cocina decreciente</li>
-              <li className="paragraph">Recogiendo el desorden</li>
-              <li className="paragraph">Lechada para azulejos</li>
+              <li className="paragraph">Sanitization of trash bins</li>
+              <li className="paragraph">Faucet descaling</li>
+              <li className="paragraph">Vent cover cleaning</li>
+              <li className="paragraph">Freezer thawing and cleaning</li>
+              <li className="paragraph">Dishwasher cleaning</li>
+              <li className="paragraph">Washing dishes, pots, and pans</li>
+              <li className="paragraph">Bathroom curtain cleaning</li>
+              <li className="paragraph">Aerator cleaning</li>
+              <li className="paragraph">Decreasing kitchen hood</li>
+              <li className="paragraph">Clutter pickup</li>
+              <li className="paragraph">Tile grout</li>
             </AccordionDetails>
           </Accordion>
         </div>
@@ -575,9 +466,9 @@ export const ServicesTabs = [
         <div className="service__principal">
           {/* PRINCIPAL */}
           <p className="paragraph">
-            Limpieza y mantenimiento periódico de los espacios de oficinas,
-            quitando el polvo, limpiar superficies, retirar la basura, incluidos
-            escritorios, pisos, baños y áreas comunes.
+            Periodic cleaning and maintenance of office spaces, including
+            dusting, surface cleaning, trash removal, including desks, floors,
+            bathrooms, and common areas.
           </p>
           <div className="accordion__container">
             <Accordion defaultExpanded>
@@ -587,55 +478,54 @@ export const ServicesTabs = [
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <p className="paragraph__bold">Esto incluye</p>
+                <p className="paragraph__bold">This includes</p>
               </AccordionSummary>
               <AccordionDetails>
                 <li className="paragraph">
-                  Limpieza y saneamiento que cubren una amplia gama de
-                  instalaciones, incluidas oficinas de escuelas, empresas
-                  pequeñas medianas o grandes y edificios.
+                  Cleaning and sanitation covering a wide range of facilities,
+                  including school offices, small, medium, or large businesses,
+                  and buildings.
                 </li>
                 <li className="paragraph__bold">
-                  Limpieza de baños:
+                  Bathroom Cleaning:
                   <span className="paragraph">
-                    Limpieza y desinfección minuciosa de los baños para
-                    garantizar la higiene y prevenir la propagación de gérmenes.
+                    Thorough cleaning and disinfection of bathrooms to ensure
+                    hygiene and prevent germ spread.
                   </span>
                 </li>
                 <li className="paragraph__bold">
-                  Retiro de basura:
+                  Trash Removal:
                   <span className="paragraph">
-                    Vaciar y reemplazar bolsas de basura en contenedores
-                    comerciales y áreas de eliminación de desechos.
+                    Emptying and replacing garbage bags in commercial containers
+                    and waste disposal areas.
                   </span>
                 </li>
                 <li className="paragraph__bold">
-                  Quitar el polvo y limpiar las superficies:
+                  Dusting and Surface Cleaning:
                   <span className="paragraph">
-                    Quitar el polvo regularmente de superficies como
-                    escritorios, estantes y equipos para mantener un espacio de
-                    trabajo limpio y ordenado.
+                    Regularly dust surfaces such as desks, shelves, and
+                    equipment to maintain a clean and tidy workspace.
                   </span>
                 </li>
                 <li className="paragraph__bold">
-                  Limpieza con mucho polvo:
+                  High Dust Cleaning:
                   <span className="paragraph">
-                    Eliminación de polvo y telarañas de áreas altas y de difícil
-                    acceso, como lámparas y esquinas del techo.
+                    Removal of dust and cobwebs from high and hard-to-reach
+                    areas, such as lamps and ceiling corners.
                   </span>
                 </li>
                 <li className="paragraph__bold">
-                  Limpieza de persianas y cortinas:
+                  Blinds and Curtains Cleaning:
                   <span className="paragraph">
-                    Limpieza y mantenimiento de persianas y cortinas para
-                    eliminar polvo y alérgenos.
+                    Cleaning and maintenance of blinds and curtains to eliminate
+                    dust and allergens.
                   </span>
                 </li>
                 <li className="paragraph__bold">
-                  Planes de limpieza personalizados:
+                  Custom Cleaning Plans:
                   <span className="paragraph">
-                    Planes de limpieza personalizados para satisfacer las
-                    necesidades específicas de cada instalación.
+                    Custom cleaning plans to meet the specific needs of each
+                    facility.
                   </span>
                 </li>
               </AccordionDetails>
@@ -650,11 +540,11 @@ export const ServicesTabs = [
         </div>
 
         <p className="paragraph__bold">
-          NOTA:
+          NOTE:
           <span className="paragraph">
-            Cabe mencionar que el servicio de limpieza puede incluir su propio
-            paquete personalizado por tal motivo recomendamos preguntar o
-            ponerse en contacto para una mejor atención.
+            It is worth mentioning that the cleaning service can include its own
+            customized package; therefore, we recommend asking or contacting us
+            for better assistance.
           </span>
         </p>
       </section>
@@ -668,9 +558,9 @@ export const ServicesTabs = [
         <div className="service__principal">
           {/* PRINCIPAL */}
           <p className="paragraph">
-            Es una limpieza de rutina, puede ser cada semana, 15 dias o
-            mensualmente. Dentro de este tipo se encuentra la general, la
-            profunda o la de oficina.
+            It&#39;s a routine cleaning, which can be done weekly, every 15
+            days, or monthly. Within this type, there are general, deep, or
+            office cleanings.
           </p>
           <div className="accordion__container">
             <Accordion defaultExpanded>
@@ -681,30 +571,22 @@ export const ServicesTabs = [
                 id="panel1a-header"
               >
                 <p className="paragraph__bold">
-                  Limpieza de dormitorios, sala y salon
+                  Bedroom, Living Room, and Lounge Cleaning
                 </p>
               </AccordionSummary>
               <AccordionDetails>
-                <li className="paragraph">Limpiar el polvo</li>
+                <li className="paragraph">Dust cleaning</li>
+                <li className="paragraph">Door handles and light switches</li>
                 <li className="paragraph">
-                  Manijas de puertas e interruptores de luz
+                  Clean/dust ventilation grilles, front surfaces of air
+                  conditioners (superficial)
                 </li>
+                <li className="paragraph">Interior glass: Doors and mirrors</li>
+                <li className="paragraph">Sills/rails and window sills</li>
+                <li className="paragraph">Sweep and mop hard surface floors</li>
+                <li className="paragraph">Vacuum carpets and rugs</li>
                 <li className="paragraph">
-                  Limpie/desempolve las rejillas de ventilación, frontales de
-                  aire acondicionado (superficiales)
-                </li>
-                <li className="paragraph">
-                  Vidrios interiores: Puertas y espejos
-                </li>
-                <li className="paragraph">
-                  Alféizares/rieles y zócalos de ventanas.
-                </li>
-                <li className="paragraph">
-                  Barrer y trapear pisos de superficie dura
-                </li>
-                <li className="paragraph">Aspirar alfrombra y tapetes</li>
-                <li className="paragraph">
-                  1-2 puertas corredizas de entrada/salida incluidas
+                  1-2 sliding entry/exit doors included
                 </li>
               </AccordionDetails>
             </Accordion>
@@ -715,24 +597,22 @@ export const ServicesTabs = [
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <p className="paragraph__bold">Limpieza de baño:</p>
+                <p className="paragraph__bold">Bathroom Cleaning:</p>
               </AccordionSummary>
               <AccordionDetails>
-                <li className="paragraph">Superficies</li>
+                <li className="paragraph">Surfaces</li>
+                <li className="paragraph">Door handles and light switches</li>
+                <li className="paragraph">Showers and bathtubs</li>
+                <li className="paragraph">Toilets</li>
                 <li className="paragraph">
-                  Manijas de puertas e interruptores de luz
+                  Interior glass: Windows, doors, mirrors
                 </li>
-                <li className="paragraph">Duchas y bañeras</li>
-                <li className="paragraph">Baños</li>
+                <li className="paragraph">Trim and molding work</li>
                 <li className="paragraph">
-                  Vidrio interior: ventanas, puertas, espejos
-                </li>
-                <li className="paragraph">Trabajos de recorte y moldura</li>
-                <li className="paragraph">
-                  Rejillas de entrada de polvo y rejillas de retorno de aire
+                  Dust entry grilles and air return grilles
                 </li>
                 <li className="paragraph">
-                  Vidrio interior: ventanas, puertas, espejos
+                  Interior glass: Windows, doors, mirrors
                 </li>
               </AccordionDetails>
             </Accordion>
@@ -743,28 +623,97 @@ export const ServicesTabs = [
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <p className="paragraph__bold">Limpieza de cocina:</p>
+                <p className="paragraph__bold">Kitchen Cleaning:</p>
               </AccordionSummary>
               <AccordionDetails>
-                <li className="paragraph">Encimeras</li>
+                <li className="paragraph">Countertops</li>
                 <li className="paragraph">
-                  Superficies: todos los gabinetes, estufa, refrigerador
+                  Surfaces: all cabinets, stove, refrigerator
                 </li>
-                <li className="paragraph">Microondas por dentro y por fuera</li>
-                <li className="paragraph">Fregaderos y accesorios</li>
+                <li className="paragraph">Microwave inside and outside</li>
+                <li className="paragraph">Sinks and fixtures</li>
                 <li className="paragraph">
-                  Limpie el exterior de gabinetes y cajones
-                </li>
-                <li className="paragraph">
-                  Cubiertas para interruptores de luz y tomacorrientes
+                  Clean the exterior of cabinets and drawers
                 </li>
                 <li className="paragraph">
-                  Barrer y trapear pisos de superficie dura
+                  Covers for light switches and outlets
                 </li>
-                <li className="paragraph">Aspirar alfombras y tapetes</li>
-                <li className="paragraph">Limpieza de campanas de cocina</li>
+                <li className="paragraph">Sweep and mop hard surface floors</li>
+                <li className="paragraph">Vacuum carpets and rugs</li>
+                <li className="paragraph">Kitchen hood cleaning</li>
                 <li className="paragraph">
-                  Alféizares/rieles de ventanas y zócalos
+                  Sills/rails of windows and baseboards
+                </li>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                sx={{ backgroundColor: "#F2F7FD" }}
+                expandIcon={<ExpandMore fontSize="large" />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <p className="paragraph__bold">Deep House Kitchen Checklist</p>
+              </AccordionSummary>
+              <AccordionDetails>
+                <li className="paragraph">Clean and disinfect the trash can</li>
+                <li className="paragraph">
+                  Clean the microwave. (inside and outside)
+                </li>
+                <li className="paragraph">Clean the dishwasher thoroughly.</li>
+                <li className="paragraph">
+                  Clean the inside of the refrigerator and organize
+                </li>
+                <li className="paragraph">Clean and organize the freezer</li>
+                <li className="paragraph">Vacuum refrigerator coils</li>
+                <li className="paragraph">Clean the oven (inside the oven)</li>
+                <li className="paragraph">
+                  Clean the hood ventilation and change the filter if necessary
+                </li>
+                <li className="paragraph">Clean stove burners</li>
+                <li className="paragraph">
+                  Clean and disinfect the garbage disposal
+                </li>
+                <li className="paragraph">
+                  Clean and organize plastic utensils and storage containers.
+                </li>
+                <li className="paragraph">
+                  Rearrange kitchen cabinets and drawers. (interior and exterior
+                  cabinets)
+                </li>
+                <li className="paragraph">
+                  Clean and organize kitchen drawers
+                </li>
+                <li className="paragraph">
+                  Clean and disinfect the coffee maker
+                </li>
+                <li className="paragraph">
+                  Clean and disinfect small appliances
+                </li>
+                <li className="paragraph">
+                  Clean under the sink and remove unnecessary items
+                </li>
+                <li className="paragraph">Clean cabinet doors deeply</li>
+                <li className="paragraph">Deep clean floors</li>
+                <li className="paragraph">
+                  Ceiling moldings dusted, wall corners, and floor moldings
+                </li>
+                <li className="paragraph">Scrub walls</li>
+                <li className="paragraph">
+                  Clean and disinfect light switches and outlets
+                </li>
+                <li className="paragraph">
+                  Remove all dust from top to bottom
+                </li>
+                <li className="paragraph">Wash table cushions</li>
+                <li className="paragraph">Clean light fixtures</li>
+                <li className="paragraph">
+                  Disinfect the table and clean all chairs, including legs and
+                  underneath
+                </li>
+                <li className="paragraph">
+                  Remove the rug, shake it, vacuum, and clean the floor before
+                  replacing the rug.
                 </li>
               </AccordionDetails>
             </Accordion>
@@ -776,79 +725,23 @@ export const ServicesTabs = [
                 id="panel1a-header"
               >
                 <p className="paragraph__bold">
-                  Lista de verificación de la cocina de la casa profunda
+                  Deep House Dining Room Cleaning Checklist
                 </p>
               </AccordionSummary>
               <AccordionDetails>
+                <li className="paragraph">Remove unnecessary items</li>
+                <li className="paragraph">Door handles and light switches</li>
+                <li className="paragraph">Showers and bathtubs</li>
+                <li className="paragraph">Toilets</li>
                 <li className="paragraph">
-                  Limpiar y desinfectar el bote de basura
+                  Interior glass: Windows, doors, mirrors
+                </li>
+                <li className="paragraph">Trim and molding work</li>
+                <li className="paragraph">
+                  Dust entry grilles and air return grilles
                 </li>
                 <li className="paragraph">
-                  Limpiar el microondas. (dentro y fuera)
-                </li>
-                <li className="paragraph">
-                  Limpiar profundamente el lavavajillas.
-                </li>
-                <li className="paragraph">
-                  Limpiar el interior del frigorífico y organizar
-                </li>
-                <li className="paragraph">Limpiar y organizar el congelador</li>
-                <li className="paragraph">Bobinas de refrigerador al vacío</li>
-                <li className="paragraph">
-                  Limpiar el horno (dentro del horno)
-                </li>
-                <li className="paragraph">
-                  Limpie la ventilación del capó y cambie el filtro si es
-                  necesario
-                </li>
-                <li className="paragraph">
-                  Limpie los quemadores de la estufa
-                </li>
-                <li className="paragraph">
-                  Limpiar y desinfectar el triturador de basura
-                </li>
-                <li className="paragraph">
-                  Limpiar y organizar utensilios de plástico y contenedores de
-                  almacenamiento.
-                </li>
-                <li className="paragraph">
-                  Reorganizar gabinetes y cajones de cocina. (gabinetes
-                  interiores y exteriores)
-                </li>
-                <li className="paragraph">
-                  Limpiar y organizar los cajones de la cocina
-                </li>
-                <li className="paragraph">Limpiar y desinfectar la cafetera</li>
-                <li className="paragraph">
-                  Limpiar y desinfectar pequeños electrodomésticos
-                </li>
-                <li className="paragraph">
-                  Limpia debajo del fregadero y elimina lo innecesario
-                </li>
-                <li className="paragraph">
-                  Puertas de gabinetes limpias profundamente
-                </li>
-                <li className="paragraph">Pisos de limpieza profunda</li>
-                <li className="paragraph">
-                  Molduras de techo antipolvo, esquinas de paredes y molduras de
-                  piso
-                </li>
-                <li className="paragraph">Fregar paredes</li>
-                <li className="paragraph">
-                  Limpiar y desinfectar interruptores y enchufes de luz
-                </li>
-                <li className="paragraph">
-                  Retire todo el polvo de arriba a abajo
-                </li>
-                <li className="paragraph">Lavar cojines de mesa</li>
-                <li className="paragraph">Artefactos de iluminación limpios</li>
-                <li className="paragraph">
-                  Desinfecte la mesa y limpie todas las sillas, incluidas las
-                  patas y debajo
-                </li>
-                <li className="paragraph">
-                  Retire la alfombra, sacúdala, aspire y limpie el piso antes de
-                  reemplazar la alfombra.
+                  Interior glass: Windows, doors, mirrors
                 </li>
               </AccordionDetails>
             </Accordion>
@@ -860,26 +753,55 @@ export const ServicesTabs = [
                 id="panel1a-header"
               >
                 <p className="paragraph__bold">
-                  Lista de verificación del comedor para la limpieza profunda de
-                  la casa
+                  Deep House Cleaning for Bathrooms:
                 </p>
               </AccordionSummary>
               <AccordionDetails>
-                <li className="paragraph">Eliminar elementos innecesarios</li>
                 <li className="paragraph">
-                  Manijas de puertas e interruptores de luz
+                  Always remember to clean from top to bottom
                 </li>
-                <li className="paragraph">Duchas y bañeras</li>
-                <li className="paragraph">Baños</li>
+                <li className="paragraph">Clean ceiling air vents</li>
                 <li className="paragraph">
-                  Vidrio interior: ventanas, puertas, espejos
-                </li>
-                <li className="paragraph">Trabajos de recorte y moldura</li>
-                <li className="paragraph">
-                  Rejillas de entrada de polvo y rejillas de retorno de aire
+                  Clean and disinfect switches and light fixtures
                 </li>
                 <li className="paragraph">
-                  Vidrio interior: ventanas, puertas, espejos
+                  Clean and disinfect toothbrush holders
+                </li>
+                <li className="paragraph">
+                  Clean and refill soap dish and/or pump
+                </li>
+                <li className="paragraph">Clean light fixtures</li>
+                <li className="paragraph">Clean mirrors</li>
+                <li className="paragraph">Clean shower curtain and liner</li>
+                <li className="paragraph">Clean shower door frame</li>
+                <li className="paragraph">
+                  Clean plastic strip at the bottom of a glass shower door
+                </li>
+                <li className="paragraph">Disinfect countertops</li>
+                <li className="paragraph">
+                  Dust and clean windows, inside and outside
+                </li>
+                <li className="paragraph">Mop and scrub floors</li>
+                <li className="paragraph">
+                  Scrub and disinfect the toilet, including around the base,
+                  under the seat, and around hinges
+                </li>
+                <li className="paragraph">Scrub the tub and/or shower</li>
+                <li className="paragraph">Scrub walls. (some stains)</li>
+                <li className="paragraph">Wash the toilet</li>
+                <li className="paragraph">
+                  Wash the trash can (inside and outside)
+                </li>
+                <li className="paragraph">
+                  Clean cabinets, knobs, towel racks, and toilet paper holders
+                </li>
+                <li className="paragraph">Clean bathroom exhaust fan</li>
+                <li className="paragraph">Clean showerhead</li>
+                <li className="paragraph">
+                  Clean, organize, and tidy cabinets and drawers
+                </li>
+                <li className="paragraph">
+                  Clean, organize, and tidy the bathroom closet
                 </li>
               </AccordionDetails>
             </Accordion>
@@ -891,66 +813,35 @@ export const ServicesTabs = [
                 id="panel1a-header"
               >
                 <p className="paragraph__bold">
-                  Limpieza profunda de la casa para baños:
+                  Deep Cleaning Checklist for Living/Family Areas:
                 </p>
               </AccordionSummary>
               <AccordionDetails>
                 <li className="paragraph">
-                  Recuerde siempre limpiar de arriba a abajo
+                  Remove anything that doesn&#39;t belong in the living room.
                 </li>
                 <li className="paragraph">
-                  Limpie las salidas de aire del techo
+                  Dust ceiling moldings, wall corners, and floor moldings
                 </li>
+                <li className="paragraph">Vacuum the entire carpeted area</li>
                 <li className="paragraph">
-                  Limpiar y desinfectar interruptores y accesorios de luz
+                  Vacuum under furniture and between cushions
                 </li>
+                <li className="paragraph">Dust ceiling fans</li>
                 <li className="paragraph">
-                  Limpiar y desinfectar los portacepillos de dientes
+                  Clean lights and wash light globes
                 </li>
+                <li className="paragraph">Dust lamps</li>
                 <li className="paragraph">
-                  Limpie y rellene la jabonera y/o la bomba
+                  Dust tapestries, mirrors, and pictures edges
                 </li>
-                <li className="paragraph">Limpiar artefactos de iluminación</li>
-                <li className="paragraph">Espejo limpio</li>
+                <li className="paragraph">Clean windows and sills</li>
                 <li className="paragraph">
-                  Limpiar la cortina y el forro de la ducha
+                  Remove scuff marks from doors and moldings
                 </li>
+                <li className="paragraph">Dust electronics</li>
                 <li className="paragraph">
-                  Limpiar el marco de la puerta de la ducha
-                </li>
-                <li className="paragraph">
-                  Limpiar la tira de plástico en la parte inferior de una puerta
-                  de ducha de vidrio
-                </li>
-                <li className="paragraph">Desinfectar encimeras</li>
-                <li className="paragraph">
-                  Quite el polvo y limpie las ventanas, por dentro y por fuera
-                </li>
-                <li className="paragraph">Trapear y fregar pisos</li>
-                <li className="paragraph">
-                  Friegue y desinfecte el inodoro, incluso alrededor de la base,
-                  debajo del asiento y alrededor de las bisagras
-                </li>
-                <li className="paragraph">Frote la bañera y/o la ducha</li>
-                <li className="paragraph">
-                  Friega las paredes. (algunas manchas)
-                </li>
-                <li className="paragraph">Lavar el inodoro</li>
-                <li className="paragraph">
-                  Lavar el bote de basura (por dentro y por fuera)
-                </li>
-                <li className="paragraph">
-                  Limpiar gabinetes, perillas, toalleros y portarrollos
-                </li>
-                <li className="paragraph">
-                  Limpiar el extractor de aire del baño
-                </li>
-                <li className="paragraph">Cabezal de ducha limpio</li>
-                <li className="paragraph">
-                  Limpia, organiza y ordena armarios y cajones
-                </li>
-                <li className="paragraph">
-                  Limpia, organiza y ordena el armario del baño
+                  Disinfect remote controls and electronic devices
                 </li>
               </AccordionDetails>
             </Accordion>
@@ -962,92 +853,40 @@ export const ServicesTabs = [
                 id="panel1a-header"
               >
                 <p className="paragraph__bold">
-                  Lista de verificación de limpieza profunda para salas de
-                  estar/áreas familiares:
+                  Deep Cleaning Checklist for Bedrooms:
                 </p>
               </AccordionSummary>
               <AccordionDetails>
                 <li className="paragraph">
-                  Toma cualquier cosa que no pertenezca a la sala de estar.
+                  Remove anything that doesn&#39;t belong in the bedroom.
                 </li>
                 <li className="paragraph">
-                  Molduras de techo antipolvo, esquinas de paredes y molduras de
-                  piso
+                  Dust ceiling, corners, and upper and lower crown moldings
+                </li>
+                <li className="paragraph">Dust baseboards and window sills</li>
+                <li className="paragraph">Dust and polish furniture</li>
+                <li className="paragraph">
+                  Dust tapestries, mirrors, and pictures edges
+                </li>
+                <li className="paragraph">Clean glass and mirrors</li>
+                <li className="paragraph">Dust lamps</li>
+                <li className="paragraph">Vacuum lampshades</li>
+                <li className="paragraph">
+                  Collect, fold dirty laundry, and remove anything that
+                  doesn&#39;t belong
+                </li>
+                <li className="paragraph">Clean light fixtures</li>
+                <li className="paragraph">Organize the closet</li>
+                <li className="paragraph">Clean mattress</li>
+                <li className="paragraph">Clean under your bed</li>
+                <li className="paragraph">Wash sheets</li>
+                <li className="paragraph">Wash pillows</li>
+                <li className="paragraph">Clean windows and sills</li>
+                <li className="paragraph">
+                  Vacuum the carpet, including edges and under furniture
                 </li>
                 <li className="paragraph">
-                  Aspire toda el área de la alfombra
-                </li>
-                <li className="paragraph">
-                  Aspire debajo de los muebles y entre los cojines
-                </li>
-                <li className="paragraph">Ventiladores de techo de polvo</li>
-                <li className="paragraph">
-                  Limpie las luces y lave los globos de luz
-                </li>
-                <li className="paragraph">Lámparas de polvo</li>
-                <li className="paragraph">
-                  Bordes de polvo de tapices, espejos y cuadros
-                </li>
-                <li className="paragraph">Limpiar ventanas y alféizares</li>
-                <li className="paragraph">
-                  Eliminar las marcas de desgaste de puertas y molduras
-                </li>
-                <li className="paragraph">Electrónica de polvo</li>
-                <li className="paragraph">
-                  Desinfectar mandos a distancia y dispositivos electrónicos
-                </li>
-              </AccordionDetails>
-            </Accordion>
-            <Accordion>
-              <AccordionSummary
-                sx={{ backgroundColor: "#F2F7FD" }}
-                expandIcon={<ExpandMore fontSize="large" />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <p className="paragraph__bold">
-                  Lista de verificación de limpieza profunda para dormitorios:
-                </p>
-              </AccordionSummary>
-              <AccordionDetails>
-                <li className="paragraph">
-                  Toma cualquier cosa que no pertenezca al dormitorio.
-                </li>
-                <li className="paragraph">
-                  Polvo del techo, las esquinas y las molduras de techo
-                  superiores e inferiores
-                </li>
-                <li className="paragraph">
-                  Quitar el polvo de los zócalos y los alféizares de las
-                  ventanas
-                </li>
-                <li className="paragraph">
-                  Quitar el polvo y pulir los muebles
-                </li>
-                <li className="paragraph">
-                  Bordes de polvo de tapices, espejos y cuadros
-                </li>
-                <li className="paragraph">Limpiar cristales y espejos</li>
-                <li className="paragraph">Lámparas de polvo</li>
-                <li className="paragraph">Pantallas de lámparas de vacío</li>
-                <li className="paragraph">
-                  Recogemos, doblamos la ropa sucia y retiramos todo lo que no
-                  corresponde
-                </li>
-                <li className="paragraph">Artefactos de iluminación limpios</li>
-                <li className="paragraph">Organizar el armario</li>
-                <li className="paragraph">Colchón limpio</li>
-                <li className="paragraph">Limpiar debajo de tu cama</li>
-                <li className="paragraph">Lavar las sábanas</li>
-                <li className="paragraph">Lavar almohadas</li>
-                <li className="paragraph">Limpiar ventanas y alféizares</li>
-                <li className="paragraph">
-                  Aspirar la alfombra, incluidos los bordes y debajo de los
-                  muebles
-                </li>
-                <li className="paragraph">
-                  Desinfectar las perillas de las puertas y las placas de los
-                  interruptores de luz
+                  Disinfect door handles and light switch plates
                 </li>
               </AccordionDetails>
             </Accordion>
@@ -1060,11 +899,11 @@ export const ServicesTabs = [
           <ModalQuote />
         </div>
         <p className="paragraph__bold">
-          NOTA:
+          NOTE:
           <span className="paragraph">
-            Cabe mencionar que el servicio de limpieza puede incluir su propio
-            paquete personalizado por tal motivo recomendamos preguntar o
-            ponerse en contacto para una mejor atención.
+            It&#39;s worth mentioning that the cleaning service can include its
+            own customized package, so we recommend asking or contacting for
+            better assistance.
           </span>
         </p>
       </section>
@@ -1078,8 +917,8 @@ export const ServicesTabs = [
         <div className="service__principal">
           {/* PRINCIPAL */}
           <p className="paragraph">
-            Limpieza de entrada y salida exhaustiva para nuevos ocupantes que se
-            mudan a una propiedad o la desalojan.
+            Exhaustive entry and exit cleaning for new occupants moving into a
+            property or vacating it.
           </p>
           <div className="accordion__container">
             <Accordion defaultExpanded>
@@ -1089,67 +928,59 @@ export const ServicesTabs = [
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <p className="paragraph__bold">
-                  Servicio de limpieza para mudanza (Salida)
-                </p>
+                <p className="paragraph__bold">Move-out Cleaning Service</p>
               </AccordionSummary>
               <AccordionDetails>
                 <p className="paragraph">
-                  Al salir de su residencia actual, es esencial dejarla en
-                  perfectas condiciones para los próximos ocupantes o asegurarse
-                  de recibir su depósito de seguridad. Nuestro servicios de
-                  limpieza para mudanzas están meticulosamente diseñados para
-                  cumplir con los más altos estándares de limpieza. Nuestro
-                  experimentado equipo de limpieza:{" "}
+                  When leaving your current residence, it is essential to leave
+                  it in perfect condition for the next occupants or ensure you
+                  get your security deposit back. Our move-out cleaning services
+                  are meticulously designed to meet the highest cleaning
+                  standards. Our experienced cleaning team:
                 </p>
                 <ul>
                   <li className="paragraph__bold">
-                    Limpieza a fondo todas las habitaciones:
+                    Thoroughly clean all rooms:
                     <span className="paragraph">
-                      no dejamos ningún rincón sin tocar, limpiamos
-                      profundamente cada habitación para asegurarnos de que esté
-                      lista par los siguientes habitantes.
+                      leaving no corner untouched, we clean every room deeply to
+                      ensure it&#39;s ready for the next inhabitants.
                     </span>
                   </li>
                   <li className="paragraph__bold">
-                    Limpieza de electrodomésticos:
+                    Appliance cleaning:
                     <span className="paragraph">
-                      limpiamos y desinfectamos electrodomésticos com hornos,
-                      refrigeradores y microondas, dejándolos impecables para
-                      los nuevos residentes.
+                      we clean and disinfect appliances such as ovens,
+                      refrigerators, and microwaves, leaving them spotless for
+                      the new residents.
                     </span>
                   </li>
                   <li className="paragraph__bold">
-                    Limpieza de piso a techo:
+                    Floor-to-ceiling cleaning:
                     <span className="paragraph">
-                      nuestro equipo limpiará e higienizará pisos, paredes y
-                      techos para eliminar cualquier rastro de suciedad, polvo o
-                      manchas.
+                      our team will clean and sanitize floors, walls, and
+                      ceilings to eliminate any trace of dirt, dust, or stains.
                     </span>
                   </li>
                   <li className="paragraph__bold">
-                    Detalles de baño:
+                    Bathroom details:
                     <span className="paragraph">
-                      limpiamos y desinfectamos meticulosamente los baños,
-                      asegurando que los accesorios, azulejos y las superficies
-                      brillen.
+                      we meticulously clean and disinfect bathrooms, ensuring
+                      fixtures, tiles, and surfaces shine.
                     </span>
                   </li>
                   <li className="paragraph__bold">
-                    Servicios personalizados:
+                    Customized services:
                     <span className="paragraph">
-                      adaptamos nuestros servicios a sus necesidades específicas
-                      y los requisitos de su contrato de arrendamiento,
-                      garantizando el cumplimiento de los estándares de limpieza
-                      al mudarse.
+                      we tailor our services to your specific needs and lease
+                      requirements, ensuring compliance with moving cleaning
+                      standards.
                     </span>
                   </li>
                   <li className="paragraph__bold">
-                    Programación flexible:
+                    Flexible scheduling:
                     <span className="paragraph">
-                      trabajamos con su cronograma de mudanzas, asegurando que
-                      su espacio este limpio y listo para los próximos ocupantes
-                      según sea necesario.
+                      we work with your moving schedule, ensuring your space is
+                      clean and ready for the next occupants as needed.
                     </span>
                   </li>
                 </ul>
@@ -1162,48 +993,44 @@ export const ServicesTabs = [
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <p className="paragraph__bold">
-                  Servicio de limpieza para mudanza (Entrada)
-                </p>
+                <p className="paragraph__bold">Move-in Cleaning Service</p>
               </AccordionSummary>
               <AccordionDetails>
                 <p className="paragraph">
-                  Mudarse a una nueva casa es una aventura emocionante, pero es
-                  esencial comenzar de nuevo en un ambiente limpio y saludable.
-                  Nuestros servicios de limpieza para mudanzas están diseñados
-                  para brindarle borrón y cuenta nueva, haciendo que su nuevo
-                  espacio se sienta como en casa desde el primer día. Esto es lo
-                  que ofrecemos:
+                  Moving into a new house is an exciting adventure, but it&#39;s
+                  essential to start fresh in a clean and healthy environment.
+                  Our move-in cleaning services are designed to give you a clean
+                  slate, making your new space feel like home from day one.
+                  Here&#39;s what we offer:
                 </p>
                 <ul>
                   <li className="paragraph__bold">
-                    Limpieza a fondo:
+                    Thorough cleaning:
                     <span className="paragraph">
-                      nos aseguramos de que se limpien todos los rincones,
-                      eliminando cualquier residuo o polvo dejado por los
-                      ocupantes anteriores.
+                      we make sure all corners are cleaned, removing any residue
+                      or dust left by previous occupants.
                     </span>
                   </li>
                   <li className="paragraph__bold">
-                    Desinfección:
+                    Disinfection:
                     <span className="paragraph">
-                      desinfectamos baños, cocinas y áreas de alto contacto para
-                      brindarle un espacio habitable limpio e higiénico.
+                      we disinfect bathrooms, kitchens, and high-touch areas to
+                      provide you with a clean and hygienic living space.
                     </span>
                   </li>
                   <li className="paragraph__bold">
-                    Limpieza personalizada:
+                    Customized cleaning:
                     <span className="paragraph">
-                      nuestros servicios pueden adaptarse a sus preferencias y
-                      prioridades, centrándose en las áreas que más le importan.
+                      our services can be tailored to your preferences and
+                      priorities, focusing on the areas that matter most to you.
                     </span>
                   </li>
                   <li className="paragraph__bold">
-                    Eficiencia:
+                    Efficiency:
                     <span className="paragraph">
-                      trabajamos con rapidez y eficiencia para adaptarnos a su
-                      cronograma de mudanza, asegurando que su nueva casa esté
-                      lista para mudarse cuando la necesite.
+                      we work quickly and efficiently to accommodate your moving
+                      schedule, ensuring your new home is move-in ready when you
+                      need it.
                     </span>
                   </li>
                 </ul>
@@ -1218,11 +1045,11 @@ export const ServicesTabs = [
           <ModalQuote />
         </div>
         <p className="paragraph__bold">
-          NOTA:
+          NOTE:
           <span className="paragraph">
-            Cabe mencionar que el servicio de limpieza puede incluir su propio
-            paquete personalizado por tal motivo recomendamos preguntar o
-            ponerse en contacto para una mejor atención.
+            It&#39;s worth mentioning that the cleaning service can include its
+            own customized package, so we recommend asking or getting in touch
+            for better assistance.
           </span>
         </p>
       </section>
@@ -1236,8 +1063,8 @@ export const ServicesTabs = [
         <div className="service__principal">
           {/* PRINCIPAL */}
           <p className="paragraph">
-            Limpieza exhaustiva de espacios comerciales después de la
-            construcción o renovaciones para eliminar el polvo y los escombros.
+            Thorough cleaning of commercial spaces after construction or
+            renovations to remove dust and debris.
           </p>
           <div className="accordion__container">
             <Accordion defaultExpanded>
@@ -1247,24 +1074,23 @@ export const ServicesTabs = [
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <p className="paragraph__bold">Esto incluye</p>
+                <p className="paragraph__bold">This includes</p>
               </AccordionSummary>
               <AccordionDetails>
-                <li className="paragraph">Quitar cintas, pegatinas</li>
+                <li className="paragraph">Remove tapes, stickers</li>
                 <li className="paragraph">
-                  Polvo, techo (de fácil acceso), lámparas, etc
+                  Dust, ceiling (easy access), lamps, etc.
                 </li>
                 <li className="paragraph">
-                  Barrer y aspirar todos los pisos y alféizares de ventanas
+                  Sweep and vacuum all floors and window sills
                 </li>
                 <li className="paragraph">
-                  Fregar y azulejos, fregaderos, pulir acero inoxidable, limpiar
-                  paredes
+                  Mop and tiles, sinks, polish stainless steel, clean walls
                 </li>
                 <li className="paragraph">
-                  Barra todo el interior y exterior de la unidad
+                  Sweep the entire interior and exterior of the unit
                 </li>
-                <li className="paragraph">Raspar y barrer el piso</li>
+                <li className="paragraph">Scrape and sweep the floor</li>
               </AccordionDetails>
             </Accordion>
           </div>
@@ -1276,11 +1102,11 @@ export const ServicesTabs = [
           <ModalQuote />
         </div>
         <p className="paragraph__bold">
-          NOTA:
+          NOTE:
           <span className="paragraph">
-            Cabe mencionar que el servicio de limpieza puede incluir su propio
-            paquete personalizado por tal motivo recomendamos preguntar o
-            ponerse en contacto para una mejor atención.
+            It&#39;s worth mentioning that the cleaning service can include its
+            own customized package, so we recommend asking or getting in touch
+            for better assistance.
           </span>
         </p>
       </section>

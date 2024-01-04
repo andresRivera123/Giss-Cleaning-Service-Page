@@ -1,6 +1,6 @@
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
-import Navbar from "../Components/Navbar";
+
 import HideAppBar from "../Components/NavbarMUI";
 import TabsServices from "../Components/Tabs";
 
@@ -15,11 +15,9 @@ function ServicesPage() {
               Discover Our Cleaning Services: From Quote To Satisfaction...
             </h2>
           </div>
-          <TabsServices />
+          <TabsServices/>
         </section>
         <section>
-          <Contact />
-          <Footer />
         </section>
       </main>
     </>
