@@ -44,7 +44,66 @@ export const ServicesTabs = [
                 </li>
               </AccordionDetails>
             </Accordion>
-            {/* ... (continue with translations for other sections) */}
+            <Accordion>
+  <AccordionSummary
+    sx={{ backgroundColor: "#F2F7FD" }}
+    expandIcon={<ExpandMore fontSize="large" />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <p className="paragraph__bold">Bathroom Cleaning:</p>
+  </AccordionSummary>
+  <AccordionDetails>
+    <li className="paragraph">Surfaces</li>
+    <li className="paragraph">
+      Door handles and light switches
+    </li>
+    <li className="paragraph">Showers and tubs</li>
+    <li className="paragraph">Toilets</li>
+    <li className="paragraph">
+      Interior glass: windows, doors, mirrors
+    </li>
+    <li className="paragraph">Trim and molding work</li>
+    <li className="paragraph">
+      Dust entry vents and air return grilles
+    </li>
+    <li className="paragraph">
+      Interior glass: windows, doors, mirrors
+    </li>
+  </AccordionDetails>
+</Accordion>
+<Accordion>
+  <AccordionSummary
+    sx={{ backgroundColor: "#F2F7FD" }}
+    expandIcon={<ExpandMore fontSize="large" />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <p className="paragraph__bold">Kitchen Cleaning:</p>
+  </AccordionSummary>
+  <AccordionDetails>
+    <li className="paragraph">Countertops</li>
+    <li className="paragraph">
+      Surfaces: all cabinets, stove, refrigerator
+    </li>
+    <li className="paragraph">Microwave inside and outside</li>
+    <li className="paragraph">Sinks and fixtures</li>
+    <li className="paragraph">
+      Clean exterior of cabinets and drawers
+    </li>
+    <li className="paragraph">
+      Covers for light switches and outlets
+    </li>
+    <li className="paragraph">
+      Sweep and mop hard surface floors
+    </li>
+    <li className="paragraph">Vacuum carpets and rugs</li>
+    <li className="paragraph">Kitchen hood cleaning</li>
+    <li className="paragraph">
+      Windowsills/rails and window sills
+    </li>
+  </AccordionDetails>
+</Accordion>
           </div>
         </div>
         <div className="service__quote">

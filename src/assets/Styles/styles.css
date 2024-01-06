@@ -9,6 +9,7 @@
   --color-black: #333333;
   --color-gray: #6B797F;
   --color-white: #ffffff;
+  --color-blue-bold: #1e3042;
 }
 
 html{
@@ -42,16 +43,17 @@ body{
 }
 
 .paragraph{
+  color: var(--color-black);
   font-size: 1.6rem;
   font-weight: 400;
   margin: 0;
 }
 
 .paragraph__bold{
+  color: var(--color-blue-bold);
   font-size: 1.6rem;
   font-weight: 600;
   margin: 0;
-
 }
 
 .aligncenter{

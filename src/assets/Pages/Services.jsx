@@ -1,10 +1,8 @@
-import Contact from "../Components/Contact";
-import Footer from "../Components/Footer";
-
 import HideAppBar from "../Components/NavbarMUI";
 import TabsServices from "../Components/Tabs";
 
 function ServicesPage() {
+  window.scrollTo(0, 0);
   return (
     <>
       <HideAppBar />
