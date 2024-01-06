@@ -9,7 +9,6 @@
   --color-black: #333333;
   --color-gray: #6B797F;
   --color-white: #ffffff;
-  --color-blue-bold: #1e3042;
 }
 
 html{
@@ -37,23 +36,22 @@ body{
 }
 
 .basictitle{
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 600;
   text-align: center;
 }
 
 .paragraph{
-  color: var(--color-black);
-  font-size: 1.6rem;
+  font-size: 2.0rem;
   font-weight: 400;
   margin: 0;
 }
 
 .paragraph__bold{
-  color: var(--color-blue-bold);
-  font-size: 1.6rem;
+  font-size: 2.0rem;
   font-weight: 600;
   margin: 0;
+
 }
 
 .aligncenter{
@@ -75,7 +73,7 @@ body{
   &:hover {
     background-color: var(--color-white);
     color: var(--color-title);
-    transform: scale(1.05);
+    transform: scale(1.15);
     font-weight: 700;
     text-shadow: none;
   }
@@ -88,11 +86,23 @@ body{
   }
 
   .subtitle{
-    font-size: 2.8rem;
+    font-size: 3.0rem;
+  }
+  
+  .basictitle{
+    font-size: 2.2rem;
+  }
+  
+  .paragraph{
+    font-size: 1.8rem;
+  }
+
+  .paragraph__bold{
+    font-size: 1.8rem;
   }
   
   .quote__button {
-    font-size: 2rem;
+    font-size: 2.0rem;
     padding: 1.2rem 2.4rem;
     &:hover {
       transform: none;
