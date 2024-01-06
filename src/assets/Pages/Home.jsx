@@ -4,11 +4,11 @@ import serviceIcon2 from "../Images/Icons/ServiceIcon2.png";
 import serviceIcon3 from "../Images/Icons/ServiceIcon3.png";
 
 import { Link } from "react-router-dom";
-import Contact from "../Components/Contact";
-import Footer from "../Components/Footer";
 import HideAppBar from "../Components/NavbarMUI";
 import ModalQuote from "../Components/ModalQuote";
-var width = screen.width;
+import SwiperImage from "../Components/SwiperImage";
+import Contact from "../Components/Contact";
+
 function HomePage() {
   return (
     <>
@@ -58,6 +58,7 @@ function HomePage() {
               <div className="knowledge__services"></div>
             </div>
           </section>
+          {/* INFORMATION */}
           <section className="information container">
             <div className="information__read ">
               <h1 className="subtitle">What is GISS CLEANING SERVICES?</h1>
@@ -75,21 +76,11 @@ function HomePage() {
                 Read more
               </Link>
             </div>
-            <div className="information__video">
-              <iframe
-                className="information__iframe"
-                width="1100"
-                height="400"
-                src="https://www.youtube.com/embed/OqVF3aiU0VE?si=4zNjgiSY78raHOaE"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
+            <SwiperImage/>
+        
           </section>
-          <Contact />
-          <Footer />
         </section>
+        <Contact/>
       </main>
     </>
   );

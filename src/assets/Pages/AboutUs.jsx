@@ -1,62 +1,54 @@
+import ModalQuote from "../Components/ModalQuote";
 import HideAppBar from "../Components/NavbarMUI";
+import SwiperImage from "../Components/SwiperImage";
 import "../Styles/Pages/about.css";
-import work1 from "../Images/Work/1.jpg";
-import Contact from "../Components/Contact";
 
 function AboutUsPage() {
+  window.scrollTo(0, 0);
   return (
     <>
       <HideAppBar />
       <main className="about container">
-        <div className="aboutus__container">
-          <h1 className="subtitle">About us</h1>
+        <section className="aboutus__container">
+          <h2 className="subtitle">About us</h2>
           <p className="paragraph">
             Welcome to Giss Cleaning Service. We are a company that provides
             professional cleaning and maintenance services for homes,
             apartments, offices, etc., with the sole objective of building trust
-            with the customer to meet each individual's needs, making them feel
-            secure and confident in a spotlessly clean environment.
+            with the customer to meet each individual&#39;s needs, making them
+            feel secure and confident in a spotlessly clean environment.
           </p>
-          {/* <div className="aboutus__img--container">
-            <img
-              src=""
-              alt="About us image"
-              className="aboutus__img"
-              width="250px"
-            />
-          </div> */}
-          <div className="aboutus__texts"></div>
+        </section>
+
+        <section className="aboutus__information">
+            <SwiperImage />
+          <div className="aboutus__process">
+            <p className="paragraph">
+              We have designed a simple, customer-centric process to ensure that
+              you receive top-notch cleaning services with ease and confidence:
+            </p>
+            <li className="paragraph__bold">
+              Clear and Detailed Estimates:
+              
+            </li>
+            <span className="paragraph">
+                Start by requesting a quote through our website form or by
+                giving us a call. We provide personalized and detailed estimates
+                for our cleaning services. You will receive a breakdown of
+                costs, including optional add-ons, so you know exactly what to
+                expect.
+              </span>
+              <div className="service__quote">
+          <p className="paragraph__bold">
+            Curious about the cost? Get your free quote now!
+          </p>
+          <ModalQuote />
         </div>
-        <div className="aboutus__galery">
-          
-        </div>
-        <Contact/>
+          </div>
+        </section>
       </main>
     </>
   );
 }
-/*   <h1 className="subtitle">About us</h1>
-            <p className="paragraph">
-              Welcome to Giss Cleaning Service. We are a company that provides
-              professional cleaning and maintenance services for homes,
-              apartments, offices, etc., with the sole objective of building
-              trust with the customer to meet each individual's needs, making
-              them feel secure and confident in a spotlessly clean environment.
-            </p>
-            <p className="paragraph">
-              We are a company created with the sole purpose of bringing peace
-              of mind to you.
-            </p>
-            <p className="paragraph__bold">And how do we achieve that?</p>
-            <p className="paragraph">
-              We take care of maintaining and organizing your home or space so
-              that you feel secure and confident.
-            </p>
-            <p className="paragraph__bold">And how do we offer our service?</p>
-            <p className="paragraph">
-              By providing a variety of services along with the best equipment
-              and professional products, paying attention to small details with
-              delicacy and professionalism.
-            </p> */
 
 export default AboutUsPage;

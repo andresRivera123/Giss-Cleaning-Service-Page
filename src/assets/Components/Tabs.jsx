@@ -29,6 +29,7 @@ const AntTab = styled((props) => <Tab disableRipple {...props} />)(
   })
 );
 
+
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -64,9 +65,9 @@ function a11yProps(index) {
 
 export default function TabsServices() {
   const [value, setValue] = React.useState(0);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
+
   };
 
   return (
@@ -89,7 +90,7 @@ export default function TabsServices() {
         </Tabs>
       </Box>
       {ServicesTabs.map((service) => (
-         <CustomTabPanel value={value} index={service.id}>
+         <CustomTabPanel key={service.id} value={value} index={service.id}>
           {service.contain}
          </CustomTabPanel>
       ))}

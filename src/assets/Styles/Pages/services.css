@@ -26,9 +26,13 @@
   padding: 2rem 0;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 64px;
 }
 
-@media (max-width: 768px) {
 
+@media (max-width: 768px) {
+  .service__quote{
+    flex-direction: column;
+    gap: 16px;
+  }
 }
